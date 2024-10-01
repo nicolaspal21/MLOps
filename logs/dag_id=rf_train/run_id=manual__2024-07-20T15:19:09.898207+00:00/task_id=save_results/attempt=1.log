@@ -1,0 +1,41 @@
+[2024-07-20T20:19:39.959+0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-20T20:19:39.975+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.save_results manual__2024-07-20T15:19:09.898207+00:00 [queued]>
+[2024-07-20T20:19:39.982+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.save_results manual__2024-07-20T15:19:09.898207+00:00 [queued]>
+[2024-07-20T20:19:39.982+0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-20T20:19:39.996+0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): save_results> on 2024-07-20 15:19:09.898207+00:00
+[2024-07-20T20:19:40.009+0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'rf_train', 'save_results', 'manual__2024-07-20T15:19:09.898207+00:00', '--job-id', '206', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-checkpoint.py', '--cfg-path', '/tmp/tmptv12o_qu']
+[2024-07-20T20:19:40.011+0500] {standard_task_runner.py:91} INFO - Job 206: Subtask save_results
+[2024-07-20T20:19:40.013+0500] {logging_mixin.py:188} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=19426) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-20T20:19:40.013+0500] {standard_task_runner.py:64} INFO - Started process 19451 to run task
+[2024-07-20T20:19:40.067+0500] {task_command.py:426} INFO - Running <TaskInstance: rf_train.save_results manual__2024-07-20T15:19:09.898207+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-07-20T20:19:40.147+0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='save_results' AIRFLOW_CTX_EXECUTION_DATE='2024-07-20T15:19:09.898207+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-20T15:19:09.898207+00:00'
+[2024-07-20T20:19:40.147+0500] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-20T20:19:40.183+0500] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2024-07-20T20:19:40.183+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-07-20T20:19:40.247+0500] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-20T20:19:40.247+0500] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-checkpoint.py", line 153, in save_results
+    json_byte_object = json.dumps(result)
+                                  ^^^^^^
+NameError: name 'result' is not defined
+[2024-07-20T20:19:40.259+0500] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=rf_train, task_id=save_results, run_id=manual__2024-07-20T15:19:09.898207+00:00, execution_date=20240720T151909, start_date=20240720T151939, end_date=20240720T151940
+[2024-07-20T20:19:40.269+0500] {standard_task_runner.py:110} ERROR - Failed to execute job 206 for task save_results (name 'result' is not defined; 19451)
+[2024-07-20T20:19:40.306+0500] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-20T20:19:40.325+0500] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-20T20:19:40.328+0500] {local_task_job_runner.py:222} INFO - ::endgroup::

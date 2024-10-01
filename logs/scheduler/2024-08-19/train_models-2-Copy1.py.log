@@ -1,0 +1,9 @@
+[2024-08-19T18:13:14.113+0500] {processor.py:186} INFO - Started process (PID=29285) to work on /home/nicolaspc/airflow/dags/train_models-2-Copy1.py
+[2024-08-19T18:13:14.114+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/train_models-2-Copy1.py for tasks to queue
+[2024-08-19T18:13:14.115+0500] {logging_mixin.py:190} INFO - [2024-08-19T18:13:14.115+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_models-2-Copy1.py
+[2024-08-19T18:13:14.907+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/train_models-2-Copy1.py
+[2024-08-19T18:13:14.975+0500] {logging_mixin.py:190} INFO - [2024-08-19T18:13:14.975+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-19T18:13:14.975+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-08-19T18:13:14.990+0500] {logging_mixin.py:190} INFO - [2024-08-19T18:13:14.990+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-08-19 01:00:00+00:00, run_after=2024-08-20 01:00:00+00:00
+[2024-08-19T18:13:14.990+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-08-19 01:00:00+00:00, run_after=2024-08-20 01:00:00+00:00
+[2024-08-19T18:13:15.011+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models-2-Copy1.py took 0.903 seconds

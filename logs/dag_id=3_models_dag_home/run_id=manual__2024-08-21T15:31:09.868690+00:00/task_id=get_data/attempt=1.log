@@ -1,0 +1,23 @@
+[2024-08-21T20:31:14.375+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-21T20:31:14.395+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag_home.get_data manual__2024-08-21T15:31:09.868690+00:00 [queued]>
+[2024-08-21T20:31:14.404+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag_home.get_data manual__2024-08-21T15:31:09.868690+00:00 [queued]>
+[2024-08-21T20:31:14.404+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-21T20:31:14.418+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_data> on 2024-08-21 15:31:09.868690+00:00
+[2024-08-21T20:31:14.430+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=296484) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-21T20:31:14.431+0500] {standard_task_runner.py:72} INFO - Started process 296507 to run task
+[2024-08-21T20:31:14.431+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag_home', 'get_data', 'manual__2024-08-21T15:31:09.868690+00:00', '--job-id', '158', '--raw', '--subdir', 'DAGS_FOLDER/homework_stepik.py', '--cfg-path', '/tmp/tmp9ot0sfnx']
+[2024-08-21T20:31:14.433+0500] {standard_task_runner.py:105} INFO - Job 158: Subtask get_data
+[2024-08-21T20:31:14.641+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag_home.get_data manual__2024-08-21T15:31:09.868690+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-21T20:31:14.717+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag_home' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T15:31:09.868690+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-21T15:31:09.868690+00:00'
+[2024-08-21T20:31:14.718+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-21T20:31:14.751+0500] {base.py:84} INFO - Retrieving connection 'pg_connection'
+[2024-08-21T20:31:14.762+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/***/dags/homework_stepik.py:98 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-08-21T20:31:14.859+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-08-21T20:31:14.860+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-08-21T20:31:17.800+0500] {homework_stepik.py:109} INFO - Data download finished.
+[2024-08-21T20:31:17.801+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20240821 20:31', 'data_download_start': '20240821 20:31', 'data_download_end': '20240821 20:31'}
+[2024-08-21T20:31:17.839+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-21T20:31:17.840+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_dag_home, task_id=get_data, run_id=manual__2024-08-21T15:31:09.868690+00:00, execution_date=20240821T153109, start_date=20240821T153114, end_date=20240821T153117
+[2024-08-21T20:31:17.898+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-08-21T20:31:18.041+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-21T20:31:18.051+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

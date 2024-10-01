@@ -1,0 +1,30 @@
+[2024-09-19T08:08:41.862+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-19T08:08:41.881+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: train.train_model scheduled__2024-09-18T01:00:00+00:00 [queued]>
+[2024-09-19T08:08:41.888+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: train.train_model scheduled__2024-09-18T01:00:00+00:00 [queued]>
+[2024-09-19T08:08:41.889+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-09-19T08:08:41.899+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_model> on 2024-09-18 01:00:00+00:00
+[2024-09-19T08:08:41.912+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=6540) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-19T08:08:41.912+0500] {standard_task_runner.py:72} INFO - Started process 6595 to run task
+[2024-09-19T08:08:41.912+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'train', 'train_model', 'scheduled__2024-09-18T01:00:00+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_dag-checkpoint.py', '--cfg-path', '/tmp/tmph6mrs0e3']
+[2024-09-19T08:08:41.913+0500] {standard_task_runner.py:105} INFO - Job 260: Subtask train_model
+[2024-09-19T08:08:41.964+0500] {task_command.py:467} INFO - Running <TaskInstance: train.train_model scheduled__2024-09-18T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-09-19T08:08:42.046+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='train' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-09-18T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-18T01:00:00+00:00'
+[2024-09-19T08:08:42.047+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-19T08:08:42.055+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_train.pkl
+[2024-09-19T08:08:42.068+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-09-19T08:08:42.068+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-09-19T08:08:43.595+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_test.pkl
+[2024-09-19T08:08:44.020+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_train.pkl
+[2024-09-19T08:08:44.458+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_test.pkl
+[2024-09-19T08:08:44.893+0500] {train_dag-checkpoint.py:130} INFO - Данные загружены
+[2024-09-19T08:08:44.893+0500] {train_dag-checkpoint.py:134} INFO - Модель подгружена
+[2024-09-19T08:08:55.780+0500] {train_dag-checkpoint.py:140} INFO - Модель обучена
+[2024-09-19T08:08:55.865+0500] {train_dag-checkpoint.py:143} INFO - Данные предсказаны
+[2024-09-19T08:08:55.867+0500] {train_dag-checkpoint.py:152} INFO - Считаем метрики
+[2024-09-19T08:08:56.897+0500] {train_dag-checkpoint.py:164} INFO - Model training finished.
+[2024-09-19T08:08:56.911+0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-19T08:08:56.923+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-19T08:08:56.923+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=train, task_id=train_model, run_id=scheduled__2024-09-18T01:00:00+00:00, execution_date=20240918T010000, start_date=20240919T030841, end_date=20240919T030856
+[2024-09-19T08:08:56.988+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-19T08:08:57.008+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-19T08:08:57.010+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

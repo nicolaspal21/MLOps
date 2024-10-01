@@ -1,0 +1,25 @@
+[2024-07-20T20:46:11.810+0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-20T20:46:11.832+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lr_train.train_model scheduled__2024-07-19T01:00:00+00:00 [queued]>
+[2024-07-20T20:46:11.840+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lr_train.train_model scheduled__2024-07-19T01:00:00+00:00 [queued]>
+[2024-07-20T20:46:11.841+0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-20T20:46:11.854+0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): train_model> on 2024-07-19 01:00:00+00:00
+[2024-07-20T20:46:11.865+0500] {logging_mixin.py:188} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=26776) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-20T20:46:11.866+0500] {standard_task_runner.py:64} INFO - Started process 26825 to run task
+[2024-07-20T20:46:11.866+0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'lr_train', 'train_model', 'scheduled__2024-07-19T01:00:00+00:00', '--job-id', '224', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-checkpoint.py', '--cfg-path', '/tmp/tmps2k4b2hq']
+[2024-07-20T20:46:11.867+0500] {standard_task_runner.py:91} INFO - Job 224: Subtask train_model
+[2024-07-20T20:46:11.925+0500] {task_command.py:426} INFO - Running <TaskInstance: lr_train.train_model scheduled__2024-07-19T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-07-20T20:46:12.017+0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='lr_train' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-07-19T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-19T01:00:00+00:00'
+[2024-07-20T20:46:12.017+0500] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-20T20:46:12.040+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_train.pkl
+[2024-07-20T20:46:12.053+0500] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2024-07-20T20:46:12.054+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-07-20T20:46:34.660+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_test.pkl
+[2024-07-20T20:46:35.332+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_train.pkl
+[2024-07-20T20:46:36.033+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_test.pkl
+[2024-07-20T20:46:36.473+0500] {train_models-checkpoint.py:112} INFO - Данные загружены
+[2024-07-20T20:46:36.500+0500] {python.py:237} INFO - Done. Returned value was: {'model': 'lr', 'start_tiemstamp': '20240720 20:46', 'train_start': '20240720 20:46', 'train_end': '20240720 20:46', 'R^2_score': 0.575787706032451, 'rmse': 0.7455813830127763, 'mae': 0.4102330008496219}
+[2024-07-20T20:46:36.501+0500] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-20T20:46:36.538+0500] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=lr_train, task_id=train_model, run_id=scheduled__2024-07-19T01:00:00+00:00, execution_date=20240719T010000, start_date=20240720T154611, end_date=20240720T154636
+[2024-07-20T20:46:36.597+0500] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-20T20:46:36.620+0500] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-20T20:46:36.622+0500] {local_task_job_runner.py:222} INFO - ::endgroup::

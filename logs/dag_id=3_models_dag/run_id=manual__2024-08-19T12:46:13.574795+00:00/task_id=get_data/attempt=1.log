@@ -1,0 +1,119 @@
+[2024-08-19T17:46:17.450+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-19T17:46:17.467+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag.get_data manual__2024-08-19T12:46:13.574795+00:00 [queued]>
+[2024-08-19T17:46:17.474+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag.get_data manual__2024-08-19T12:46:13.574795+00:00 [queued]>
+[2024-08-19T17:46:17.474+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-19T17:46:17.484+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_data> on 2024-08-19 12:46:13.574795+00:00
+[2024-08-19T17:46:17.496+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=19069) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-19T17:46:17.497+0500] {standard_task_runner.py:72} INFO - Started process 19098 to run task
+[2024-08-19T17:46:17.497+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag', 'get_data', 'manual__2024-08-19T12:46:13.574795+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-2-checkpoint.py', '--cfg-path', '/tmp/tmpher1t6ry']
+[2024-08-19T17:46:17.498+0500] {standard_task_runner.py:105} INFO - Job 34: Subtask get_data
+[2024-08-19T17:46:17.550+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag.get_data manual__2024-08-19T12:46:13.574795+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-19T17:46:17.632+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-19T12:46:13.574795+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-19T12:46:13.574795+00:00'
+[2024-08-19T17:46:17.633+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-19T17:46:17.668+0500] {base.py:84} INFO - Retrieving connection 'pg_connection'
+[2024-08-19T17:46:17.671+0500] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py", line 66, in get_data_from_postgres
+    con = pg_hook.get_conn()
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 175, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "***"
+
+[2024-08-19T17:46:17.684+0500] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=3_models_dag, task_id=get_data, run_id=manual__2024-08-19T12:46:13.574795+00:00, execution_date=20240819T124613, start_date=20240819T124617, end_date=20240819T124617
+[2024-08-19T17:46:17.694+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-19T17:46:17.695+0500] {standard_task_runner.py:124} ERROR - Failed to execute job 34 for task get_data (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "***"
+; 19098)
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py", line 66, in get_data_from_postgres
+    con = pg_hook.get_conn()
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 175, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "***"
+
+[2024-08-19T17:46:17.711+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-08-19T17:46:17.735+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T17:46:17.739+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

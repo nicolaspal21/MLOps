@@ -1,0 +1,18 @@
+[2024-08-12T13:20:02.622+0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-12T13:20:02.639+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hgb_train.get_data scheduled__2024-08-11T01:00:00+00:00 [queued]>
+[2024-08-12T13:20:02.646+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hgb_train.get_data scheduled__2024-08-11T01:00:00+00:00 [queued]>
+[2024-08-12T13:20:02.646+0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-12T13:20:02.659+0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_data> on 2024-08-11 01:00:00+00:00
+[2024-08-12T13:20:02.671+0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'hgb_train', 'get_data', 'scheduled__2024-08-11T01:00:00+00:00', '--job-id', '241', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmpxct0yz75']
+[2024-08-12T13:20:02.673+0500] {standard_task_runner.py:91} INFO - Job 241: Subtask get_data
+[2024-08-12T13:20:02.673+0500] {logging_mixin.py:188} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=14496) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-12T13:20:02.673+0500] {standard_task_runner.py:64} INFO - Started process 14587 to run task
+[2024-08-12T13:20:02.728+0500] {task_command.py:426} INFO - Running <TaskInstance: hgb_train.get_data scheduled__2024-08-11T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-12T13:20:02.816+0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='hgb_train' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-11T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-11T01:00:00+00:00'
+[2024-08-12T13:20:02.816+0500] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-12T13:20:02.825+0500] {python.py:237} INFO - Done. Returned value was: {'model': 'hgb', 'start_tiemstamp': '20240812 13:20'}
+[2024-08-12T13:20:02.826+0500] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-12T13:20:02.853+0500] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=hgb_train, task_id=get_data, run_id=scheduled__2024-08-11T01:00:00+00:00, execution_date=20240811T010000, start_date=20240812T082002, end_date=20240812T082002
+[2024-08-12T13:20:02.887+0500] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-12T13:20:02.910+0500] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-12T13:20:02.913+0500] {local_task_job_runner.py:222} INFO - ::endgroup::

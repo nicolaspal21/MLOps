@@ -1,0 +1,138 @@
+[2024-08-21T22:18:29.450+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-21T22:18:29.468+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag_home_2.train_hgb manual__2024-08-21T17:17:59.068018+00:00 [queued]>
+[2024-08-21T22:18:29.475+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag_home_2.train_hgb manual__2024-08-21T17:17:59.068018+00:00 [queued]>
+[2024-08-21T22:18:29.476+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-21T22:18:29.489+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_hgb> on 2024-08-21 17:17:59.068018+00:00
+[2024-08-21T22:18:29.501+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=350540) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-21T22:18:29.502+0500] {standard_task_runner.py:72} INFO - Started process 350610 to run task
+[2024-08-21T22:18:29.501+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag_home_2', 'train_hgb', 'manual__2024-08-21T17:17:59.068018+00:00', '--job-id', '242', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/homework_stepik_2-checkpoint.py', '--cfg-path', '/tmp/tmpa2he2nbc']
+[2024-08-21T22:18:29.503+0500] {standard_task_runner.py:105} INFO - Job 242: Subtask train_hgb
+[2024-08-21T22:18:29.719+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag_home_2.train_hgb manual__2024-08-21T17:17:59.068018+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-21T22:18:29.803+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag_home_2' AIRFLOW_CTX_TASK_ID='train_hgb' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T17:17:59.068018+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-21T17:17:59.068018+00:00'
+[2024-08-21T22:18:29.804+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-21T22:18:29.839+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_train.pkl
+[2024-08-21T22:18:29.854+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-08-21T22:18:29.854+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-08-21T22:18:44.027+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_test.pkl
+[2024-08-21T22:18:44.791+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_train.pkl
+[2024-08-21T22:18:45.716+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_test.pkl
+[2024-08-21T22:18:46.225+0500] {homework_stepik_2-checkpoint.py:209} INFO - Данные загружены
+[2024-08-21T22:18:46.324+0500] {migration.py:216} INFO - Context impl PostgresqlImpl.
+[2024-08-21T22:18:46.325+0500] {migration.py:219} INFO - Will assume transactional DDL.
+[2024-08-21T22:18:46.542+0500] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik_2-checkpoint.py", line 211, in train_model
+    with mlflow.start_run(run_name="parent_run_1", experiment_id=experiment_id, description = "parent_1") as parent_run:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 382, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/client.py", line 395, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 165, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 467, in create_run
+    self._check_experiment_is_active(experiment)
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 596, in _check_experiment_is_active
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The experiment 0 must be in the 'active' state. Current state is deleted.
+[2024-08-21T22:18:46.556+0500] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=3_models_dag_home_2, task_id=train_hgb, run_id=manual__2024-08-21T17:17:59.068018+00:00, execution_date=20240821T171759, start_date=20240821T171829, end_date=20240821T171846
+[2024-08-21T22:18:46.701+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-21T22:18:46.702+0500] {standard_task_runner.py:124} ERROR - Failed to execute job 242 for task train_hgb (The experiment 0 must be in the 'active' state. Current state is deleted.; 350610)
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik_2-checkpoint.py", line 211, in train_model
+    with mlflow.start_run(run_name="parent_run_1", experiment_id=experiment_id, description = "parent_1") as parent_run:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 382, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/client.py", line 395, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 165, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 467, in create_run
+    self._check_experiment_is_active(experiment)
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 596, in _check_experiment_is_active
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The experiment 0 must be in the 'active' state. Current state is deleted.
+[2024-08-21T22:18:46.727+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-08-21T22:18:46.746+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-21T22:18:46.748+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

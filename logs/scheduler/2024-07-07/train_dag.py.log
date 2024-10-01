@@ -1,0 +1,765 @@
+[2024-07-07T23:55:10.588+0500] {processor.py:161} INFO - Started process (PID=3522) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:55:10.589+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:55:10.590+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:55:10.589+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:55:11.474+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:55:11.486+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:55:11.486+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:55:11.487+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:55:11.502+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:55:11.502+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:55:11.502+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:55:11.530+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.946 seconds
+[2024-07-07T23:55:41.693+0500] {processor.py:161} INFO - Started process (PID=3600) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:55:41.694+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:55:41.695+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:55:41.695+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:55:42.609+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:55:42.678+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:55:42.678+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:55:42.678+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:55:42.692+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:55:42.692+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:55:42.692+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:55:42.708+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 1.018 seconds
+[2024-07-07T23:56:06.484+0500] {processor.py:161} INFO - Started process (PID=3670) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:06.487+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:56:06.488+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:06.488+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:07.341+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:07.352+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:07.351+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:56:07.352+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:56:07.366+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:07.365+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:07.366+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:07.387+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.906 seconds
+[2024-07-07T23:56:12.827+0500] {processor.py:161} INFO - Started process (PID=3712) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:12.830+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:56:12.832+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:12.832+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:13.722+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:13.742+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:13.741+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:56:13.742+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:56:13.756+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:13.756+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:13.756+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:13.779+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.955 seconds
+[2024-07-07T23:56:37.546+0500] {processor.py:161} INFO - Started process (PID=3865) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:37.548+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:56:37.550+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:37.549+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:38.459+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:38.479+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:38.478+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:56:38.479+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:56:38.492+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:38.492+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:38.492+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:38.509+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.967 seconds
+[2024-07-07T23:56:43.940+0500] {processor.py:161} INFO - Started process (PID=3941) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:43.943+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:56:43.944+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:43.944+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:44.839+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:56:44.858+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:44.858+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:56:44.858+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:56:44.872+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:56:44.872+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:44.872+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:56:44.895+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.958 seconds
+[2024-07-07T23:57:08.663+0500] {processor.py:161} INFO - Started process (PID=4094) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:08.665+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:57:08.666+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:08.666+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:09.523+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:09.543+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:09.542+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:57:09.543+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:57:09.559+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:09.559+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:09.559+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:09.582+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.922 seconds
+[2024-07-07T23:57:15.048+0500] {processor.py:161} INFO - Started process (PID=4136) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:15.050+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:57:15.051+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:15.051+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:15.900+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:15.919+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:15.919+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:57:15.919+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:57:15.935+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:15.935+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:15.935+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:15.952+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.908 seconds
+[2024-07-07T23:57:39.747+0500] {processor.py:161} INFO - Started process (PID=4187) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:39.749+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:57:39.750+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:39.750+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:40.600+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:40.622+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:40.621+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:57:40.622+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:57:40.637+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:40.636+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:40.637+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:40.659+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.916 seconds
+[2024-07-07T23:57:46.114+0500] {processor.py:161} INFO - Started process (PID=4230) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:46.116+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:57:46.118+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:46.118+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:46.971+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:57:46.990+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:46.989+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:57:46.990+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:57:47.006+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:57:47.006+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:47.006+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:57:47.021+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.911 seconds
+[2024-07-07T23:58:10.828+0500] {processor.py:161} INFO - Started process (PID=4295) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:10.830+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:58:10.832+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:10.831+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:11.690+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:11.708+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:11.708+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:58:11.708+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:58:11.723+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:11.723+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:11.723+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:11.746+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.921 seconds
+[2024-07-07T23:58:17.190+0500] {processor.py:161} INFO - Started process (PID=4337) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:17.191+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:58:17.192+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:17.191+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:18.042+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:18.062+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:18.061+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:58:18.062+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:58:18.077+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:18.077+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:18.077+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:18.091+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.904 seconds
+[2024-07-07T23:58:42.016+0500] {processor.py:161} INFO - Started process (PID=4403) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:42.024+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:58:42.026+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:42.025+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:42.751+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:42.771+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:42.770+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:58:42.771+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:58:42.787+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:42.787+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:42.787+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:42.809+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.798 seconds
+[2024-07-07T23:58:48.265+0500] {processor.py:161} INFO - Started process (PID=4431) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:48.268+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:58:48.269+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:48.269+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:49.133+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:58:49.151+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:49.151+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:58:49.152+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:58:49.167+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:58:49.167+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:49.168+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:58:49.189+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.928 seconds
+[2024-07-07T23:59:12.979+0500] {processor.py:161} INFO - Started process (PID=4484) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:12.982+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:59:12.984+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:12.983+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:13.766+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:13.785+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:13.785+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:59:13.785+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:59:13.799+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:13.799+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:13.800+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:13.813+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.839 seconds
+[2024-07-07T23:59:19.366+0500] {processor.py:161} INFO - Started process (PID=4526) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:19.369+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:59:19.370+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:19.369+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:20.230+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:20.250+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:20.250+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:59:20.250+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:59:20.267+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:20.267+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:20.267+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:20.289+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.927 seconds
+[2024-07-07T23:59:43.978+0500] {processor.py:161} INFO - Started process (PID=4577) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:43.979+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:59:43.980+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:43.980+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:44.758+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:44.777+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:44.776+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:59:44.777+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:59:44.792+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:44.791+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:44.792+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:44.815+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.841 seconds
+[2024-07-07T23:59:50.459+0500] {processor.py:161} INFO - Started process (PID=4620) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:50.463+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-07T23:59:50.465+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:50.465+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:51.320+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-07T23:59:51.340+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:51.340+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:59:51.340+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-07T23:59:51.355+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:59:51.355+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:51.356+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-07T23:59:51.370+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.915 seconds
+[2024-07-08T00:00:14.978+0500] {processor.py:161} INFO - Started process (PID=4676) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:14.979+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:00:14.981+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:14.981+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:15.755+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:15.775+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:15.775+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:00:15.775+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:00:15.792+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:15.792+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:15.792+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:15.806+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.831 seconds
+[2024-07-08T00:00:21.629+0500] {processor.py:161} INFO - Started process (PID=4731) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:21.631+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:00:21.632+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:21.632+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:22.421+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:22.441+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:22.440+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:00:22.441+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:00:22.456+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:22.456+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:22.456+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:22.472+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.846 seconds
+[2024-07-08T00:00:45.972+0500] {processor.py:161} INFO - Started process (PID=4898) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:45.980+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:00:45.981+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:45.981+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:46.772+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:46.792+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:46.792+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:00:46.792+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:00:46.807+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:46.807+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:46.807+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:46.822+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.854 seconds
+[2024-07-08T00:00:52.634+0500] {processor.py:161} INFO - Started process (PID=4989) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:52.636+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:00:52.637+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:52.637+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:53.428+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:00:53.446+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:53.446+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:00:53.447+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:00:53.462+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:00:53.462+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:53.462+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:00:53.477+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.847 seconds
+[2024-07-08T00:01:16.994+0500] {processor.py:161} INFO - Started process (PID=5447) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:16.994+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:01:16.995+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:16.995+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:17.783+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:17.802+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:17.801+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:01:17.802+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:01:17.817+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:17.816+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:17.817+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:17.832+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.842 seconds
+[2024-07-08T00:01:23.634+0500] {processor.py:161} INFO - Started process (PID=5557) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:23.635+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:01:23.636+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:23.636+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:24.429+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:24.449+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:24.449+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:01:24.450+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:01:24.463+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:24.463+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:24.463+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:24.487+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.856 seconds
+[2024-07-08T00:01:48.000+0500] {processor.py:161} INFO - Started process (PID=5612) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:48.002+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:01:48.003+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:48.003+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:48.777+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:48.796+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:48.796+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:01:48.796+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:01:48.812+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:48.811+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:48.812+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:48.826+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.830 seconds
+[2024-07-08T00:01:54.651+0500] {processor.py:161} INFO - Started process (PID=5658) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:54.653+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:01:54.655+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:54.655+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:55.419+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:01:55.438+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:55.438+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:01:55.438+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:01:55.452+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:01:55.452+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:55.452+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:01:55.475+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.828 seconds
+[2024-07-08T00:02:18.989+0500] {processor.py:161} INFO - Started process (PID=5709) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:18.990+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:02:18.992+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:18.991+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:19.766+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:19.787+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:19.786+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:02:19.787+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:02:19.802+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:19.801+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:19.802+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:19.824+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.839 seconds
+[2024-07-08T00:02:25.638+0500] {processor.py:161} INFO - Started process (PID=5751) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:25.639+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:02:25.640+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:25.640+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:26.423+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:26.442+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:26.442+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:02:26.442+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:02:26.458+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:26.458+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:26.458+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:26.473+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.839 seconds
+[2024-07-08T00:02:49.994+0500] {processor.py:161} INFO - Started process (PID=5816) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:49.995+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:02:49.996+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:49.996+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:50.759+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:50.778+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:50.778+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:02:50.778+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:02:50.792+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:50.792+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:50.793+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:50.814+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.825 seconds
+[2024-07-08T00:02:56.640+0500] {processor.py:161} INFO - Started process (PID=5858) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:56.641+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:02:56.642+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:56.642+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:57.424+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:02:57.447+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:57.446+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:02:57.447+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:02:57.460+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:02:57.460+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:57.461+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:02:57.476+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.840 seconds
+[2024-07-08T00:03:20.986+0500] {processor.py:161} INFO - Started process (PID=5921) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:20.988+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:03:20.989+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:20.988+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:21.770+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:21.788+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:21.788+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:03:21.788+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:03:21.804+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:21.804+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:21.805+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:21.828+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.846 seconds
+[2024-07-08T00:03:27.636+0500] {processor.py:161} INFO - Started process (PID=5964) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:27.638+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:03:27.640+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:27.639+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:28.423+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:28.443+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:28.443+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:03:28.444+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:03:28.461+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:28.461+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:28.461+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:28.485+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.852 seconds
+[2024-07-08T00:03:52.004+0500] {processor.py:161} INFO - Started process (PID=6028) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:52.005+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:03:52.006+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:52.006+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:52.790+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:52.809+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:52.809+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:03:52.810+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:03:52.825+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:52.825+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:52.825+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:52.848+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.848 seconds
+[2024-07-08T00:03:58.646+0500] {processor.py:161} INFO - Started process (PID=6070) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:58.647+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:03:58.648+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:58.648+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:59.438+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:03:59.458+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:59.457+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:03:59.458+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:03:59.472+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:03:59.472+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:59.472+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:03:59.488+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.847 seconds
+[2024-07-08T00:04:23.017+0500] {processor.py:161} INFO - Started process (PID=6120) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:23.018+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:04:23.019+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:23.019+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:23.808+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:23.825+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:23.825+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:04:23.826+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:04:23.840+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:23.840+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:04:23.840+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:04:23.863+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.850 seconds
+[2024-07-08T00:04:29.651+0500] {processor.py:161} INFO - Started process (PID=6163) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:29.653+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:04:29.654+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:29.654+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:30.437+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:30.458+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:30.458+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:04:30.458+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:04:30.474+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:30.474+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:04:30.474+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:04:30.498+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.851 seconds
+[2024-07-08T00:04:54.032+0500] {processor.py:161} INFO - Started process (PID=6214) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:54.033+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:04:54.034+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:54.034+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:54.798+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:04:54.817+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:54.816+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:04:54.817+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:04:54.832+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:04:54.832+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:04:54.832+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:04:54.848+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.820 seconds
+[2024-07-08T00:05:00.666+0500] {processor.py:161} INFO - Started process (PID=6256) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:00.668+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:05:00.669+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:00.669+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:01.451+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:01.470+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:01.469+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:05:01.470+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:05:01.486+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:01.485+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:01.486+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:01.501+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.839 seconds
+[2024-07-08T00:05:25.014+0500] {processor.py:161} INFO - Started process (PID=6309) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:25.015+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:05:25.016+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:25.016+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:25.796+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:25.815+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:25.815+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:05:25.815+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:05:25.830+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:25.829+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:25.830+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:25.844+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.834 seconds
+[2024-07-08T00:05:31.671+0500] {processor.py:161} INFO - Started process (PID=6353) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:31.674+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:05:31.675+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:31.675+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:32.476+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:32.494+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:32.494+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:05:32.494+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:05:32.510+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:32.510+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:32.511+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:32.534+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.866 seconds
+[2024-07-08T00:05:56.005+0500] {processor.py:161} INFO - Started process (PID=6404) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:56.006+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:05:56.007+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:56.007+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:56.778+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:05:56.797+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:56.797+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:05:56.797+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:05:56.811+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:05:56.811+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:56.811+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:05:56.826+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.825 seconds
+[2024-07-08T00:06:02.707+0500] {processor.py:161} INFO - Started process (PID=6446) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:02.709+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:06:02.711+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:02.711+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:03.496+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:03.516+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:03.515+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:06:03.516+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:06:03.531+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:03.531+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:03.531+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:03.555+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.852 seconds
+[2024-07-08T00:06:26.996+0500] {processor.py:161} INFO - Started process (PID=6497) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:26.998+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:06:26.999+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:26.999+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:27.775+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:27.795+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:27.794+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:06:27.795+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:06:27.810+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:27.810+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:27.810+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:27.833+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.842 seconds
+[2024-07-08T00:06:33.721+0500] {processor.py:161} INFO - Started process (PID=6539) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:33.723+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:06:33.724+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:33.724+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:34.506+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:34.524+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:34.524+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:06:34.524+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:06:34.539+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:34.539+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:34.539+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:34.562+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.845 seconds
+[2024-07-08T00:06:57.995+0500] {processor.py:161} INFO - Started process (PID=6591) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:57.997+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:06:57.998+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:57.998+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:58.767+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:06:58.787+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:58.787+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:06:58.788+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:06:58.802+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:06:58.801+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:58.802+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:06:58.816+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.825 seconds
+[2024-07-08T00:07:04.728+0500] {processor.py:161} INFO - Started process (PID=6633) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:04.729+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:07:04.730+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:04.730+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:05.516+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:05.536+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:05.536+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:07:05.536+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:07:05.550+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:05.550+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:07:05.550+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:07:05.574+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.850 seconds
+[2024-07-08T00:07:28.978+0500] {processor.py:161} INFO - Started process (PID=6684) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:28.980+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:07:28.981+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:28.981+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:29.765+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:29.784+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:29.784+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:07:29.784+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:07:29.799+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:29.799+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:07:29.799+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:07:29.822+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.848 seconds
+[2024-07-08T00:07:35.742+0500] {processor.py:161} INFO - Started process (PID=6726) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:35.744+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:07:35.745+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:35.745+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:36.527+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:36.547+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:36.547+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:07:36.547+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:07:36.562+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:36.562+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:07:36.562+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:07:36.577+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.839 seconds
+[2024-07-08T00:07:59.990+0500] {processor.py:161} INFO - Started process (PID=6790) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:07:59.991+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:07:59.992+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:07:59.992+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:00.756+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:00.775+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:00.775+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:08:00.775+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:08:00.790+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:00.790+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:00.791+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:00.813+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.827 seconds
+[2024-07-08T00:08:06.740+0500] {processor.py:161} INFO - Started process (PID=6832) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:06.742+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:08:06.744+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:06.743+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:07.507+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:07.527+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:07.526+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:08:07.527+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:08:07.542+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:07.542+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:07.543+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:07.566+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.830 seconds
+[2024-07-08T00:08:30.981+0500] {processor.py:161} INFO - Started process (PID=6883) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:30.983+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:08:30.984+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:30.984+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:31.741+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:31.761+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:31.761+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:08:31.761+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:08:31.776+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:31.776+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:31.776+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:31.798+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.821 seconds
+[2024-07-08T00:08:37.726+0500] {processor.py:161} INFO - Started process (PID=6925) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:37.729+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:08:37.730+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:37.729+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:38.511+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:08:38.531+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:38.531+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:08:38.532+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:08:38.546+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:08:38.546+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:38.546+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:08:38.568+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.846 seconds
+[2024-07-08T00:09:01.965+0500] {processor.py:161} INFO - Started process (PID=6989) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:01.968+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:09:01.970+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:01.969+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:02.742+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:02.761+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:02.760+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:09:02.761+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:09:02.775+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:02.775+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:02.775+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:02.789+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.829 seconds
+[2024-07-08T00:09:08.738+0500] {processor.py:161} INFO - Started process (PID=7031) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:08.738+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:09:08.739+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:08.739+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:09.513+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:09.533+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:09.533+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:09:09.534+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:09:09.550+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:09.550+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:09.550+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:09.566+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.832 seconds
+[2024-07-08T00:09:32.956+0500] {processor.py:161} INFO - Started process (PID=7095) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:32.958+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:09:32.960+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:32.959+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:33.741+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:33.760+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:33.759+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:09:33.760+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:09:33.776+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:33.776+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:33.776+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:33.790+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.838 seconds
+[2024-07-08T00:09:39.735+0500] {processor.py:161} INFO - Started process (PID=7137) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:39.736+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:09:39.738+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:39.737+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:40.530+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:09:40.550+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:40.549+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:09:40.550+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:09:40.565+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:09:40.565+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:40.566+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:09:40.590+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.858 seconds
+[2024-07-08T00:10:03.953+0500] {processor.py:161} INFO - Started process (PID=7201) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:03.956+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:10:03.958+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:03.957+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:04.757+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:04.776+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:04.776+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:10:04.776+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:10:04.792+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:04.792+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:04.792+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:04.811+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.862 seconds
+[2024-07-08T00:10:10.769+0500] {processor.py:161} INFO - Started process (PID=7243) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:10.770+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:10:10.772+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:10.771+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:11.545+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:11.567+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:11.567+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:10:11.568+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:10:11.585+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:11.585+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:11.585+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:11.610+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.844 seconds
+[2024-07-08T00:10:34.983+0500] {processor.py:161} INFO - Started process (PID=7295) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:34.984+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:10:34.985+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:34.985+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:35.746+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:35.765+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:35.764+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:10:35.765+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:10:35.788+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:35.788+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:35.788+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:35.803+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.823 seconds
+[2024-07-08T00:10:41.782+0500] {processor.py:161} INFO - Started process (PID=7337) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:41.784+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:10:41.786+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:41.785+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:42.562+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:10:42.582+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:42.581+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:10:42.582+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:10:42.597+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:10:42.597+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:42.597+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:10:42.620+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.841 seconds
+[2024-07-08T00:11:05.966+0500] {processor.py:161} INFO - Started process (PID=7389) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:05.968+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:11:05.970+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:05.970+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:06.756+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:06.775+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:06.774+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:11:06.775+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:11:06.790+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:06.790+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:06.790+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:06.804+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.843 seconds
+[2024-07-08T00:11:12.792+0500] {processor.py:161} INFO - Started process (PID=7431) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:12.794+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:11:12.795+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:12.795+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:13.592+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:13.612+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:13.611+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:11:13.612+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:11:13.627+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:13.627+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:13.627+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:13.642+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.854 seconds
+[2024-07-08T00:11:36.982+0500] {processor.py:161} INFO - Started process (PID=7495) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:36.984+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:11:36.985+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:36.985+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:37.760+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:37.781+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:37.781+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:11:37.781+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:11:37.795+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:37.795+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:37.795+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:37.817+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.840 seconds
+[2024-07-08T00:11:43.809+0500] {processor.py:161} INFO - Started process (PID=7537) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:43.809+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:11:43.810+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:43.810+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:44.578+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:11:44.598+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:44.597+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:11:44.598+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:11:44.613+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:11:44.613+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:44.613+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:11:44.627+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.822 seconds
+[2024-07-08T00:12:07.981+0500] {processor.py:161} INFO - Started process (PID=7601) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:07.982+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:12:07.983+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:07.983+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:08.749+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:08.768+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:08.768+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:12:08.768+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:12:08.782+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:08.782+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:08.782+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:08.805+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.828 seconds
+[2024-07-08T00:12:14.795+0500] {processor.py:161} INFO - Started process (PID=7643) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:14.797+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:12:14.798+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:14.798+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:15.599+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:15.619+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:15.619+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:12:15.619+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:12:15.634+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:15.634+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:15.634+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:15.649+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.857 seconds
+[2024-07-08T00:12:38.973+0500] {processor.py:161} INFO - Started process (PID=7707) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:38.975+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:12:38.976+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:38.976+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:39.753+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:39.772+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:39.772+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:12:39.773+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:12:39.789+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:39.789+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:39.789+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:39.803+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.834 seconds
+[2024-07-08T00:12:45.814+0500] {processor.py:161} INFO - Started process (PID=7749) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:45.815+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:12:45.816+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:45.816+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:46.590+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:12:46.610+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:46.610+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:12:46.610+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:12:46.625+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:12:46.625+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:46.625+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:12:46.648+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.839 seconds
+[2024-07-08T00:13:09.968+0500] {processor.py:161} INFO - Started process (PID=7837) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:09.969+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:13:09.970+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:09.970+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:10.758+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:10.779+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:10.779+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:13:10.779+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:13:10.794+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:10.793+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:10.794+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:10.808+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.843 seconds
+[2024-07-08T00:13:16.813+0500] {processor.py:161} INFO - Started process (PID=7880) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:16.816+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:13:16.817+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:16.817+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:17.600+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:17.620+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:17.620+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:13:17.621+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:13:17.635+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:17.635+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:17.636+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:17.658+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.848 seconds
+[2024-07-08T00:13:40.965+0500] {processor.py:161} INFO - Started process (PID=7941) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:40.967+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:13:40.967+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:40.967+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:41.812+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:41.832+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:41.832+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:13:41.832+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:13:41.848+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:41.848+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:41.848+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:41.872+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.911 seconds
+[2024-07-08T00:13:47.825+0500] {processor.py:161} INFO - Started process (PID=7992) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:47.826+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:13:47.826+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:47.826+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:48.652+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:13:48.671+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:48.671+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:13:48.671+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:13:48.686+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:13:48.686+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:48.686+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:13:48.710+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.889 seconds
+[2024-07-08T00:14:11.972+0500] {processor.py:161} INFO - Started process (PID=8056) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:11.974+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:14:11.974+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:11.974+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:12.785+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:12.805+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:12.804+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:14:12.805+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:14:12.820+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:12.820+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:12.821+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:12.843+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.875 seconds
+[2024-07-08T00:14:18.809+0500] {processor.py:161} INFO - Started process (PID=8116) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:18.811+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:14:18.812+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:18.811+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:19.611+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:19.630+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:19.629+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:14:19.630+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:14:19.645+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:19.645+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:19.645+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:19.668+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.863 seconds
+[2024-07-08T00:14:24.635+0500] {processor.py:161} INFO - Started process (PID=8337) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:24.636+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:14:24.637+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:24.637+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:25.543+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:25.557+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:25.557+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:14:25.557+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:14:25.573+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:25.573+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:25.573+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:25.588+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.956 seconds
+[2024-07-08T00:14:42.940+0500] {processor.py:161} INFO - Started process (PID=8393) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:42.941+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:14:42.942+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:42.941+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:43.855+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:43.869+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:43.869+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:14:43.869+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:14:43.886+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:43.885+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:43.886+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:43.908+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.973 seconds
+[2024-07-08T00:14:49.807+0500] {processor.py:161} INFO - Started process (PID=8455) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:49.808+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:14:49.809+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:49.808+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:50.659+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:50.672+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:50.672+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:14:50.672+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:14:50.689+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:50.689+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:50.689+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:50.704+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.901 seconds
+[2024-07-08T00:14:55.717+0500] {processor.py:161} INFO - Started process (PID=8497) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:55.718+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:14:55.719+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:55.719+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:56.620+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:14:56.690+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:56.690+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:14:56.691+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:14:56.706+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:14:56.706+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:56.706+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:14:56.720+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 1.007 seconds
+[2024-07-08T00:15:13.974+0500] {processor.py:161} INFO - Started process (PID=8557) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:13.974+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:13.975+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:13.975+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:14.765+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:14.777+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:14.777+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:14.778+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:14.792+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:14.792+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:14.792+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:14.814+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.845 seconds
+[2024-07-08T00:15:20.859+0500] {processor.py:161} INFO - Started process (PID=8596) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:20.861+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:20.862+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:20.861+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:21.658+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:21.671+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:21.671+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:21.671+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:21.686+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:21.685+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:21.686+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:21.710+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.855 seconds
+[2024-07-08T00:15:26.846+0500] {processor.py:161} INFO - Started process (PID=8635) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:26.848+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:26.849+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:26.849+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:27.716+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:27.736+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:27.736+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:27.736+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:27.752+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:27.752+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:27.752+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:27.768+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.926 seconds
+[2024-07-08T00:15:43.405+0500] {processor.py:161} INFO - Started process (PID=8882) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:43.406+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:43.407+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:43.406+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:44.391+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:44.405+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:44.405+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:44.405+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:44.422+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:44.422+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:44.423+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:44.441+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 1.040 seconds
+[2024-07-08T00:15:44.906+0500] {processor.py:161} INFO - Started process (PID=8934) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:44.907+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:44.907+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:44.907+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:45.760+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:45.774+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:45.774+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:45.775+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:45.790+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:45.789+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:45.790+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:45.806+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.904 seconds
+[2024-07-08T00:15:51.851+0500] {processor.py:161} INFO - Started process (PID=8997) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:51.852+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:51.853+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:51.852+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:52.637+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:52.649+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:52.648+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:52.649+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:52.664+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:52.664+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:52.664+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:52.688+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.842 seconds
+[2024-07-08T00:15:57.869+0500] {processor.py:161} INFO - Started process (PID=9035) to work on /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:57.872+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/airflow/dags/train_dag.py for tasks to queue
+[2024-07-08T00:15:57.873+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:57.873+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:58.744+0500] {processor.py:840} INFO - DAG(s) 'train' retrieved from /home/nicolaspc/airflow/dags/train_dag.py
+[2024-07-08T00:15:58.756+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:58.756+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-08T00:15:58.757+0500] {logging_mixin.py:188} WARNING - Sync 1 DAGs
+[2024-07-08T00:15:58.771+0500] {logging_mixin.py:188} INFO - [2024-07-08T00:15:58.771+0500] {dag.py:3954} INFO - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:58.771+0500] {logging_mixin.py:188} WARNING - Setting next_dagrun for train to 2024-07-07 01:00:00+00:00, run_after=2024-07-08 01:00:00+00:00
+[2024-07-08T00:15:58.793+0500] {processor.py:183} INFO - Processing /home/nicolaspc/airflow/dags/train_dag.py took 0.928 seconds

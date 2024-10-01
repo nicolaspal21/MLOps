@@ -1,0 +1,182 @@
+[2024-09-19T08:08:33.807+0500] {processor.py:186} INFO - Started process (PID=6343) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:08:33.807+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:08:33.809+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:08:33.809+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:08:33.818+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:08:33.905+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:08:33.905+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:08:33.924+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:08:33.924+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:08:33.942+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.141 seconds
+[2024-09-19T08:09:05.168+0500] {processor.py:186} INFO - Started process (PID=7291) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:09:05.169+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:09:05.170+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:05.170+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:09:05.180+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:09:05.202+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:05.202+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:09:05.220+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:05.220+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:09:05.245+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.082 seconds
+[2024-09-19T08:09:36.557+0500] {processor.py:186} INFO - Started process (PID=7557) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:09:36.558+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:09:36.559+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:36.559+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:09:36.568+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:09:36.589+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:36.589+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:09:36.606+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:36.606+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:09:36.622+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.069 seconds
+[2024-09-19T08:10:08.373+0500] {processor.py:186} INFO - Started process (PID=7821) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:10:08.373+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:10:08.375+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:08.374+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:10:08.384+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:10:08.406+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:08.405+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:10:08.422+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:08.422+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:10:08.442+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.074 seconds
+[2024-09-19T08:10:39.813+0500] {processor.py:186} INFO - Started process (PID=8090) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:10:39.814+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:10:39.815+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:39.815+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:10:39.825+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:10:39.850+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:39.850+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:10:39.874+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:39.873+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:10:39.890+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.081 seconds
+[2024-09-19T08:11:11.095+0500] {processor.py:186} INFO - Started process (PID=8360) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:11:11.095+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:11:11.097+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:11.097+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:11:11.106+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:11:11.127+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:11.127+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:11:11.145+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:11.145+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:11:11.161+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.070 seconds
+[2024-09-19T08:11:42.988+0500] {processor.py:186} INFO - Started process (PID=9077) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:11:42.991+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:11:42.993+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:42.993+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:11:43.010+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:11:43.047+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:43.047+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:11:43.073+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:43.073+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:11:43.093+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.112 seconds
+[2024-09-19T08:12:14.889+0500] {processor.py:186} INFO - Started process (PID=9518) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:12:14.890+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:12:14.892+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:14.891+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:12:14.904+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:12:14.935+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:14.935+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:12:14.957+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:14.957+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:12:14.985+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.101 seconds
+[2024-09-19T08:12:46.780+0500] {processor.py:186} INFO - Started process (PID=9989) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:12:46.781+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:12:46.782+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:46.782+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:12:46.792+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:12:46.817+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:46.817+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:12:46.836+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:46.836+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:12:46.853+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.078 seconds
+[2024-09-19T08:13:18.755+0500] {processor.py:186} INFO - Started process (PID=10784) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:13:18.756+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:13:18.758+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:18.758+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:13:18.771+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:13:18.799+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:18.799+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:13:18.820+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:18.820+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:13:18.840+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.091 seconds
+[2024-09-19T08:13:50.420+0500] {processor.py:186} INFO - Started process (PID=11043) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:13:50.421+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:13:50.423+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:50.422+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:13:50.433+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:13:50.456+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:50.456+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:13:50.475+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:50.475+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:13:50.492+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.076 seconds
+[2024-09-19T08:14:22.962+0500] {processor.py:186} INFO - Started process (PID=11324) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:14:22.965+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:14:22.968+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:22.968+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:14:22.984+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:14:23.019+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:23.018+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:14:23.045+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:23.045+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:14:23.068+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.112 seconds
+[2024-09-19T08:14:54.398+0500] {processor.py:186} INFO - Started process (PID=11608) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:14:54.399+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:14:54.400+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:54.400+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:14:54.414+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:14:54.437+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:54.436+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:14:54.455+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:54.455+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:14:54.471+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.077 seconds
+[2024-09-19T08:15:27.040+0500] {processor.py:186} INFO - Started process (PID=11892) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:15:27.041+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:15:27.043+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:27.043+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:15:27.056+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:15:27.083+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:27.083+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:15:27.110+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:27.110+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:15:27.133+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.099 seconds
+[2024-09-19T08:15:58.602+0500] {processor.py:186} INFO - Started process (PID=12156) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:15:58.603+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:15:58.605+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:58.604+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:15:58.619+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:15:58.651+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:58.651+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:15:58.678+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:58.678+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:15:58.701+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.106 seconds
+[2024-09-19T08:16:30.629+0500] {processor.py:186} INFO - Started process (PID=12423) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:16:30.637+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:16:30.640+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:30.639+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:16:30.654+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:16:30.690+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:30.690+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:16:30.712+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:30.712+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:16:30.731+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.108 seconds
+[2024-09-19T08:17:00.867+0500] {processor.py:186} INFO - Started process (PID=12678) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:17:00.868+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:17:00.870+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:00.870+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:17:00.882+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:17:00.909+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:00.909+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:17:00.934+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:00.933+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:17:00.961+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.099 seconds
+[2024-09-19T08:17:32.970+0500] {processor.py:186} INFO - Started process (PID=12947) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:17:32.971+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:17:32.972+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:32.972+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:17:32.983+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:17:33.006+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:33.005+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:17:33.023+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:33.023+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:17:33.039+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.074 seconds
+[2024-09-19T08:18:05.065+0500] {processor.py:186} INFO - Started process (PID=13262) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:18:05.066+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:18:05.067+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:05.067+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:18:05.077+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:18:05.101+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:05.101+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:18:05.119+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:05.119+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:18:05.137+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.076 seconds
+[2024-09-19T08:18:36.763+0500] {processor.py:186} INFO - Started process (PID=14363) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:18:36.764+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:18:36.765+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:36.765+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:18:36.774+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:18:36.796+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:36.796+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:18:36.822+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:36.822+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:18:36.840+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.082 seconds
+[2024-09-19T08:19:08.605+0500] {processor.py:186} INFO - Started process (PID=14901) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:19:08.606+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:19:08.608+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:08.607+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:19:08.617+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:19:08.640+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:08.640+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:19:08.673+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:08.672+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:19:08.696+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.095 seconds
+[2024-09-19T08:19:40.643+0500] {processor.py:186} INFO - Started process (PID=16049) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:19:40.644+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:19:40.646+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:40.645+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:19:40.656+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:19:40.678+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:40.678+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:19:40.696+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:40.696+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:19:40.712+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.073 seconds
+[2024-09-19T08:20:12.309+0500] {processor.py:186} INFO - Started process (PID=16648) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:20:12.309+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:20:12.311+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:12.311+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:20:12.320+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:20:12.341+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:12.341+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:20:12.372+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:12.372+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:20:12.409+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.105 seconds
+[2024-09-19T08:20:44.392+0500] {processor.py:186} INFO - Started process (PID=17186) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:20:44.393+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:20:44.395+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:44.395+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:20:44.406+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:20:44.433+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:44.432+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:20:44.454+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:44.454+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:20:44.473+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.086 seconds
+[2024-09-19T08:21:14.559+0500] {processor.py:186} INFO - Started process (PID=17683) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:21:14.560+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:21:14.561+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:21:14.561+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:21:14.573+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:21:14.598+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:21:14.598+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:21:14.618+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:21:14.618+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:21:14.635+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.082 seconds
+[2024-09-19T08:35:41.301+0500] {processor.py:186} INFO - Started process (PID=24280) to work on /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:35:41.301+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/dag_1.py for tasks to queue
+[2024-09-19T08:35:41.302+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:35:41.302+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:35:41.312+0500] {processor.py:925} INFO - DAG(s) 'mlops_dag_1' retrieved from /home/nicolaspc/airflow/dags/dag_1.py
+[2024-09-19T08:35:41.389+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:35:41.389+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:35:41.406+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:35:41.405+0500] {dag.py:4138} INFO - Setting next_dagrun for mlops_dag_1 to 2024-09-18 01:00:00+00:00, run_after=2024-09-19 01:00:00+00:00
+[2024-09-19T08:35:41.432+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/dag_1.py took 0.135 seconds

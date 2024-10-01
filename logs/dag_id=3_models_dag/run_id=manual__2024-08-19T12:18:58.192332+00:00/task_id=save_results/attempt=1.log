@@ -1,0 +1,20 @@
+[2024-08-19T17:19:23.707+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-19T17:19:23.725+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag.save_results manual__2024-08-19T12:18:58.192332+00:00 [queued]>
+[2024-08-19T17:19:23.733+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag.save_results manual__2024-08-19T12:18:58.192332+00:00 [queued]>
+[2024-08-19T17:19:23.733+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-19T17:19:23.750+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): save_results> on 2024-08-19 12:18:58.192332+00:00
+[2024-08-19T17:19:23.762+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=8894) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-19T17:19:23.763+0500] {standard_task_runner.py:72} INFO - Started process 8945 to run task
+[2024-08-19T17:19:23.762+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag', 'save_results', 'manual__2024-08-19T12:18:58.192332+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/train_models-2.py', '--cfg-path', '/tmp/tmpxviws5z3']
+[2024-08-19T17:19:23.764+0500] {standard_task_runner.py:105} INFO - Job 20: Subtask save_results
+[2024-08-19T17:19:23.815+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag.save_results manual__2024-08-19T12:18:58.192332+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-19T17:19:23.893+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag' AIRFLOW_CTX_TASK_ID='save_results' AIRFLOW_CTX_EXECUTION_DATE='2024-08-19T12:18:58.192332+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-19T12:18:58.192332+00:00'
+[2024-08-19T17:19:23.894+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-19T17:19:23.922+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-08-19T17:19:23.940+0500] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-08-19T17:19:25.044+0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-08-19T17:19:25.055+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-19T17:19:25.056+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_dag, task_id=save_results, run_id=manual__2024-08-19T12:18:58.192332+00:00, execution_date=20240819T121858, start_date=20240819T121923, end_date=20240819T121925
+[2024-08-19T17:19:25.102+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-08-19T17:19:25.122+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T17:19:25.124+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

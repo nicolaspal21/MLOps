@@ -1,0 +1,18 @@
+[2024-08-19T08:44:59.552+0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-19T08:44:59.575+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lr_train.init scheduled__2024-08-18T01:00:00+00:00 [queued]>
+[2024-08-19T08:44:59.586+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lr_train.init scheduled__2024-08-18T01:00:00+00:00 [queued]>
+[2024-08-19T08:44:59.587+0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-19T08:44:59.603+0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): init> on 2024-08-18 01:00:00+00:00
+[2024-08-19T08:44:59.618+0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'lr_train', 'init', 'scheduled__2024-08-18T01:00:00+00:00', '--job-id', '261', '--raw', '--subdir', 'DAGS_FOLDER/train_models-2.py', '--cfg-path', '/tmp/tmpdt_s12_a']
+[2024-08-19T08:44:59.620+0500] {standard_task_runner.py:91} INFO - Job 261: Subtask init
+[2024-08-19T08:44:59.621+0500] {logging_mixin.py:188} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=37126) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-19T08:44:59.622+0500] {standard_task_runner.py:64} INFO - Started process 37297 to run task
+[2024-08-19T08:44:59.680+0500] {task_command.py:426} INFO - Running <TaskInstance: lr_train.init scheduled__2024-08-18T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-19T08:44:59.787+0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='lr_train' AIRFLOW_CTX_TASK_ID='init' AIRFLOW_CTX_EXECUTION_DATE='2024-08-18T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-18T01:00:00+00:00'
+[2024-08-19T08:44:59.788+0500] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-19T08:44:59.819+0500] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-19T08:44:59.819+0500] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-19T08:44:59.833+0500] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=lr_train, task_id=init, run_id=scheduled__2024-08-18T01:00:00+00:00, execution_date=20240818T010000, start_date=20240819T034459, end_date=20240819T034459
+[2024-08-19T08:44:59.875+0500] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-19T08:44:59.907+0500] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T08:44:59.910+0500] {local_task_job_runner.py:222} INFO - ::endgroup::

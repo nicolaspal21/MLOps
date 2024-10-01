@@ -1,0 +1,32 @@
+[2024-08-21T21:35:31.777+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-21T21:35:31.797+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag_home.train_rf manual__2024-08-21T16:35:10.013981+00:00 [queued]>
+[2024-08-21T21:35:31.805+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag_home.train_rf manual__2024-08-21T16:35:10.013981+00:00 [queued]>
+[2024-08-21T21:35:31.806+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-21T21:35:31.818+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_rf> on 2024-08-21 16:35:10.013981+00:00
+[2024-08-21T21:35:31.833+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=325883) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-21T21:35:31.834+0500] {standard_task_runner.py:72} INFO - Started process 325958 to run task
+[2024-08-21T21:35:31.834+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag_home', 'train_rf', 'manual__2024-08-21T16:35:10.013981+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/homework_stepik-checkpoint.py', '--cfg-path', '/tmp/tmpzunfwlso']
+[2024-08-21T21:35:31.839+0500] {standard_task_runner.py:105} INFO - Job 201: Subtask train_rf
+[2024-08-21T21:35:31.897+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag_home.train_rf manual__2024-08-21T16:35:10.013981+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-21T21:35:31.984+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag_home' AIRFLOW_CTX_TASK_ID='train_rf' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T16:35:10.013981+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-21T16:35:10.013981+00:00'
+[2024-08-21T21:35:31.986+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-21T21:35:32.242+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_train.pkl
+[2024-08-21T21:35:32.256+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-08-21T21:35:32.256+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-08-21T21:35:33.719+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_test.pkl
+[2024-08-21T21:35:34.174+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_train.pkl
+[2024-08-21T21:35:34.653+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_test.pkl
+[2024-08-21T21:35:35.171+0500] {homework_stepik-checkpoint.py:209} INFO - Данные загружены
+[2024-08-21T21:35:35.283+0500] {migration.py:216} INFO - Context impl PostgresqlImpl.
+[2024-08-21T21:35:35.283+0500] {migration.py:219} INFO - Will assume transactional DDL.
+[2024-08-21T21:35:50.429+0500] {logging_mixin.py:190} WARNING - 2024/08/21 21:35:50 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-08-21T21:35:50.531+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sklearn/base.py:486 UserWarning: X has feature names, but RandomForestRegressor was fitted without feature names
+[2024-08-21T21:35:50.626+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-08-21T21:35:50.628+0500] {logging_mixin.py:190} WARNING - 2024/08/21 21:35:50 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-08-21T21:35:50.630+0500] {logging_mixin.py:190} WARNING - 2024/08/21 21:35:50 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-08-21T21:35:50.673+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20240821 21:35', 'data_download_start': '20240821 21:35', 'data_download_end': '20240821 21:35', 'data_preparation_start': '20240821 21:35', 'data_preparation_end': '20240821 21:35', 'rf_train_start': '20240821 21:35', 'rf_train_end': '20240821 21:35', 'rf_R^2_score': 0.8076890762005444, 'rf_rmse': 0.502001953343419, 'rf_mae': 0.19686500000000012}
+[2024-08-21T21:35:50.702+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-21T21:35:50.703+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_dag_home, task_id=train_rf, run_id=manual__2024-08-21T16:35:10.013981+00:00, execution_date=20240821T163510, start_date=20240821T163531, end_date=20240821T163550
+[2024-08-21T21:35:50.776+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-08-21T21:35:50.797+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-21T21:35:50.800+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

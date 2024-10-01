@@ -1,0 +1,25 @@
+[2024-09-19T08:12:56.401+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-19T08:12:56.425+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag.train_rf manual__2024-09-19T03:12:40.326569+00:00 [queued]>
+[2024-09-19T08:12:56.437+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag.train_rf manual__2024-09-19T03:12:40.326569+00:00 [queued]>
+[2024-09-19T08:12:56.438+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-09-19T08:12:56.455+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_rf> on 2024-09-19 03:12:40.326569+00:00
+[2024-09-19T08:12:56.476+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10093) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-19T08:12:56.477+0500] {standard_task_runner.py:72} INFO - Started process 10248 to run task
+[2024-09-19T08:12:56.479+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag', 'train_rf', 'manual__2024-09-19T03:12:40.326569+00:00', '--job-id', '280', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-2-checkpoint.py', '--cfg-path', '/tmp/tmpnewxtt9z']
+[2024-09-19T08:12:56.482+0500] {standard_task_runner.py:105} INFO - Job 280: Subtask train_rf
+[2024-09-19T08:12:56.548+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag.train_rf manual__2024-09-19T03:12:40.326569+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-09-19T08:12:56.652+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag' AIRFLOW_CTX_TASK_ID='train_rf' AIRFLOW_CTX_EXECUTION_DATE='2024-09-19T03:12:40.326569+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-19T03:12:40.326569+00:00'
+[2024-09-19T08:12:56.653+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-19T08:12:56.683+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_train.pkl
+[2024-09-19T08:12:56.699+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-09-19T08:12:56.700+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-09-19T08:13:00.119+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_test.pkl
+[2024-09-19T08:13:00.749+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_train.pkl
+[2024-09-19T08:13:01.489+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/y_test.pkl
+[2024-09-19T08:13:01.910+0500] {train_models-2-checkpoint.py:140} INFO - Данные загружены
+[2024-09-19T08:13:13.798+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20240919 08:12', 'data_download_start': '20240919 08:12', 'data_download_end': '20240919 08:12', 'data_preparation_end': '20240919 08:12', 'rf_train_start': '20240919 08:13', 'rf_train_end': '20240919 08:13', 'rf_R^2_score': 0.8065309890283603, 'rf_rmse': 0.5035112004599538, 'rf_mae': 0.19925999999999994}
+[2024-09-19T08:13:13.847+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-19T08:13:13.847+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_dag, task_id=train_rf, run_id=manual__2024-09-19T03:12:40.326569+00:00, execution_date=20240919T031240, start_date=20240919T031256, end_date=20240919T031313
+[2024-09-19T08:13:13.925+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-19T08:13:13.949+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-19T08:13:13.952+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

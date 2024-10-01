@@ -1,0 +1,42 @@
+[2024-08-19T08:44:59.456+0500] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-19T08:44:59.493+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: train.init scheduled__2024-08-18T01:00:00+00:00 [queued]>
+[2024-08-19T08:44:59.502+0500] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: train.init scheduled__2024-08-18T01:00:00+00:00 [queued]>
+[2024-08-19T08:44:59.502+0500] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-19T08:44:59.519+0500] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): init> on 2024-08-18 01:00:00+00:00
+[2024-08-19T08:44:59.558+0500] {logging_mixin.py:188} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=37125) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-19T08:44:59.559+0500] {standard_task_runner.py:64} INFO - Started process 37285 to run task
+[2024-08-19T08:44:59.566+0500] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'train', 'init', 'scheduled__2024-08-18T01:00:00+00:00', '--job-id', '258', '--raw', '--subdir', 'DAGS_FOLDER/train_dag.py', '--cfg-path', '/tmp/tmpvsxxuq20']
+[2024-08-19T08:44:59.567+0500] {standard_task_runner.py:91} INFO - Job 258: Subtask init
+[2024-08-19T08:44:59.634+0500] {task_command.py:426} INFO - Running <TaskInstance: train.init scheduled__2024-08-18T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-19T08:44:59.747+0500] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='train' AIRFLOW_CTX_TASK_ID='init' AIRFLOW_CTX_EXECUTION_DATE='2024-08-18T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-18T01:00:00+00:00'
+[2024-08-19T08:44:59.748+0500] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-19T08:44:59.783+0500] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2024-08-19T08:44:59.784+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-08-19T08:45:02.069+0500] {train_dag.py:84} INFO - Data download finished.
+[2024-08-19T08:45:02.071+0500] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-19T08:45:02.071+0500] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-19T08:45:02.082+0500] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=train, task_id=init, run_id=scheduled__2024-08-18T01:00:00+00:00, execution_date=20240818T010000, start_date=20240819T034459, end_date=20240819T034502
+[2024-08-19T08:45:02.127+0500] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-19T08:45:02.151+0500] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T08:45:02.153+0500] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-19T17:21:57.068+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-19T17:21:57.090+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: train.init scheduled__2024-08-18T01:00:00+00:00 [queued]>
+[2024-08-19T17:21:57.102+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: train.init scheduled__2024-08-18T01:00:00+00:00 [queued]>
+[2024-08-19T17:21:57.102+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-19T17:21:57.113+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): init> on 2024-08-18 01:00:00+00:00
+[2024-08-19T17:21:57.125+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10100) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-19T17:21:57.126+0500] {standard_task_runner.py:72} INFO - Started process 10123 to run task
+[2024-08-19T17:21:57.125+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'train', 'init', 'scheduled__2024-08-18T01:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_dag-checkpoint.py', '--cfg-path', '/tmp/tmp3yp61a_3']
+[2024-08-19T17:21:57.127+0500] {standard_task_runner.py:105} INFO - Job 21: Subtask init
+[2024-08-19T17:21:57.185+0500] {task_command.py:467} INFO - Running <TaskInstance: train.init scheduled__2024-08-18T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-19T17:21:57.269+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='train' AIRFLOW_CTX_TASK_ID='init' AIRFLOW_CTX_EXECUTION_DATE='2024-08-18T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-18T01:00:00+00:00'
+[2024-08-19T17:21:57.270+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-19T17:21:57.302+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-08-19T17:21:57.319+0500] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-08-19T17:22:03.011+0500] {train_dag-checkpoint.py:84} INFO - Data download finished.
+[2024-08-19T17:22:03.013+0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-08-19T17:22:03.027+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-19T17:22:03.028+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=train, task_id=init, run_id=scheduled__2024-08-18T01:00:00+00:00, execution_date=20240818T010000, start_date=20240819T122157, end_date=20240819T122203
+[2024-08-19T17:22:03.102+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-08-19T17:22:03.130+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-19T17:22:03.133+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

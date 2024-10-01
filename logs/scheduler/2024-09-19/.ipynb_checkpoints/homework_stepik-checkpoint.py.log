@@ -1,0 +1,234 @@
+[2024-09-19T08:08:29.217+0500] {processor.py:186} INFO - Started process (PID=5977) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:08:29.218+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:08:29.223+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:08:29.223+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:08:30.326+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:08:30.340+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:08:30.339+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:08:30.340+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:08:30.356+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:08:30.356+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:08:30.356+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:08:30.374+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.173 seconds
+[2024-09-19T08:09:01.133+0500] {processor.py:186} INFO - Started process (PID=7113) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:09:01.134+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:09:01.135+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:01.135+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:09:02.168+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:09:02.342+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:02.341+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:09:02.342+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:09:02.360+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:02.360+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:09:02.360+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:09:02.376+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.247 seconds
+[2024-09-19T08:09:32.713+0500] {processor.py:186} INFO - Started process (PID=7395) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:09:32.714+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:09:32.715+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:32.715+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:09:33.689+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:09:33.702+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:33.701+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:09:33.702+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:09:33.720+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:09:33.719+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:09:33.720+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:09:33.745+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.036 seconds
+[2024-09-19T08:10:03.993+0500] {processor.py:186} INFO - Started process (PID=7644) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:10:03.993+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:10:03.995+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:03.995+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:10:05.058+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:10:05.252+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:05.252+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:10:05.252+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:10:05.270+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:05.269+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:10:05.270+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:10:05.294+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.305 seconds
+[2024-09-19T08:10:35.911+0500] {processor.py:186} INFO - Started process (PID=7927) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:10:35.920+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:10:35.921+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:35.921+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:10:37.024+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:10:37.039+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:37.038+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:10:37.039+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:10:37.055+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:10:37.055+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:10:37.055+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:10:37.070+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.163 seconds
+[2024-09-19T08:11:07.193+0500] {processor.py:186} INFO - Started process (PID=8198) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:11:07.194+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:11:07.195+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:07.195+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:11:08.398+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:11:08.467+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:08.467+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:11:08.467+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:11:08.483+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:08.482+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:11:08.483+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:11:08.499+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.321 seconds
+[2024-09-19T08:11:38.614+0500] {processor.py:186} INFO - Started process (PID=8473) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:11:38.623+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:11:38.625+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:38.624+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:11:39.797+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:11:39.811+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:39.811+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:11:39.811+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:11:39.830+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:11:39.830+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:11:39.830+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:11:39.846+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.235 seconds
+[2024-09-19T08:12:10.448+0500] {processor.py:186} INFO - Started process (PID=9331) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:12:10.452+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:12:10.454+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:10.454+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:12:11.561+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:12:11.641+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:11.641+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:12:11.641+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:12:11.659+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:11.659+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:12:11.659+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:12:11.695+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.252 seconds
+[2024-09-19T08:12:42.756+0500] {processor.py:186} INFO - Started process (PID=9741) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:12:42.756+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:12:42.758+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:42.758+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:12:44.066+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:12:44.084+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:44.083+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:12:44.084+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:12:44.113+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:12:44.113+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:12:44.113+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:12:44.141+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.389 seconds
+[2024-09-19T08:13:14.365+0500] {processor.py:186} INFO - Started process (PID=10560) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:13:14.366+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:13:14.368+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:14.367+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:13:15.800+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:13:15.919+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:15.918+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:13:15.919+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:13:15.941+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:15.940+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:13:15.941+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:13:15.971+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.610 seconds
+[2024-09-19T08:13:46.348+0500] {processor.py:186} INFO - Started process (PID=10902) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:13:46.349+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:13:46.350+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:46.350+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:13:47.895+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:13:47.914+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:47.913+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:13:47.914+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:13:47.939+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:13:47.938+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:13:47.939+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:13:47.958+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.616 seconds
+[2024-09-19T08:14:18.294+0500] {processor.py:186} INFO - Started process (PID=11182) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:14:18.295+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:14:18.297+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:18.297+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:14:19.787+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:14:19.898+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:19.897+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:14:19.898+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:14:19.924+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:19.923+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:14:19.924+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:14:19.954+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.667 seconds
+[2024-09-19T08:14:50.954+0500] {processor.py:186} INFO - Started process (PID=11470) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:14:50.963+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:14:50.965+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:50.964+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:14:52.143+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:14:52.157+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:52.157+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:14:52.157+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:14:52.173+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:14:52.173+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:14:52.173+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:14:52.189+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.240 seconds
+[2024-09-19T08:15:22.379+0500] {processor.py:186} INFO - Started process (PID=11753) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:15:22.383+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:15:22.385+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:22.385+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:15:23.837+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:15:23.976+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:23.975+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:15:23.976+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:15:24.000+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:24.000+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:15:24.001+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:15:24.037+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.672 seconds
+[2024-09-19T08:15:54.171+0500] {processor.py:186} INFO - Started process (PID=12020) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:15:54.172+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:15:54.173+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:54.173+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:15:55.668+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:15:55.695+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:55.695+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:15:55.695+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:15:55.738+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:15:55.738+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:15:55.738+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:15:55.771+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.607 seconds
+[2024-09-19T08:16:26.067+0500] {processor.py:186} INFO - Started process (PID=12292) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:16:26.068+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:16:26.070+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:26.070+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:16:27.844+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:16:27.985+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:27.984+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:16:27.985+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:16:28.022+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:28.021+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:16:28.022+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:16:28.062+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 2.002 seconds
+[2024-09-19T08:16:58.503+0500] {processor.py:186} INFO - Started process (PID=12571) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:16:58.503+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:16:58.505+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:58.505+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:16:59.640+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:16:59.661+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:59.660+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:16:59.661+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:16:59.677+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:16:59.677+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:16:59.677+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:16:59.692+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.194 seconds
+[2024-09-19T08:17:30.625+0500] {processor.py:186} INFO - Started process (PID=12859) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:17:30.633+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:17:30.635+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:30.635+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:17:31.854+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:17:31.927+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:31.927+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:17:31.927+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:17:31.945+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:17:31.945+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:17:31.945+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:17:31.972+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.353 seconds
+[2024-09-19T08:18:02.682+0500] {processor.py:186} INFO - Started process (PID=13163) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:18:02.683+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:18:02.684+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:02.684+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:18:03.883+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:18:03.903+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:03.902+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:18:03.903+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:18:03.920+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:03.919+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:18:03.920+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:18:03.935+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.258 seconds
+[2024-09-19T08:18:34.467+0500] {processor.py:186} INFO - Started process (PID=14263) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:18:34.468+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:18:34.469+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:34.469+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:18:35.578+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:18:35.656+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:35.655+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:18:35.656+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:18:35.671+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:18:35.671+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:18:35.671+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:18:35.693+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.231 seconds
+[2024-09-19T08:19:06.315+0500] {processor.py:186} INFO - Started process (PID=14804) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:19:06.315+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:19:06.317+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:06.317+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:19:07.430+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:19:07.458+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:07.457+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:19:07.458+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:19:07.473+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:07.473+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:19:07.473+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:19:07.487+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.177 seconds
+[2024-09-19T08:19:38.222+0500] {processor.py:186} INFO - Started process (PID=15924) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:19:38.222+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:19:38.224+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:38.224+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:19:39.541+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:19:39.624+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:39.624+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:19:39.624+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:19:39.643+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:19:39.642+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:19:39.643+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:19:39.671+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.455 seconds
+[2024-09-19T08:20:09.939+0500] {processor.py:186} INFO - Started process (PID=16511) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:20:09.940+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:20:09.942+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:09.941+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:20:11.140+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:20:11.160+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:11.160+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:20:11.160+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:20:11.177+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:11.177+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:20:11.177+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:20:11.192+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.257 seconds
+[2024-09-19T08:20:41.753+0500] {processor.py:186} INFO - Started process (PID=17083) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:20:41.753+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:20:41.755+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:41.754+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:20:42.945+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:20:43.064+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:43.063+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:20:43.064+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:20:43.090+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:20:43.090+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:20:43.090+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:20:43.119+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.371 seconds
+[2024-09-19T08:21:13.271+0500] {processor.py:186} INFO - Started process (PID=17622) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:21:13.271+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:21:13.272+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:21:13.272+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:21:14.390+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:21:14.414+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:21:14.413+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:21:14.414+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:21:14.441+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:21:14.440+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:21:14.441+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:21:14.460+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.194 seconds
+[2024-09-19T08:35:38.922+0500] {processor.py:186} INFO - Started process (PID=23907) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:35:38.924+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py for tasks to queue
+[2024-09-19T08:35:38.926+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:35:38.925+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:35:40.284+0500] {processor.py:925} INFO - DAG(s) '3_models_dag_home' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py
+[2024-09-19T08:35:40.413+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:35:40.413+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-19T08:35:40.414+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-09-19T08:35:40.431+0500] {logging_mixin.py:190} INFO - [2024-09-19T08:35:40.430+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:35:40.431+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag_home to 2024-09-19 01:00:00+00:00, run_after=2024-09-20 01:00:00+00:00
+[2024-09-19T08:35:40.460+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/homework_stepik-checkpoint.py took 1.544 seconds

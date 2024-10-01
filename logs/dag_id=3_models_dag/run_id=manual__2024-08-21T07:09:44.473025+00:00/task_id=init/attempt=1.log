@@ -1,0 +1,18 @@
+[2024-08-21T12:09:46.439+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-08-21T12:09:46.457+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_dag.init manual__2024-08-21T07:09:44.473025+00:00 [queued]>
+[2024-08-21T12:09:46.464+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_dag.init manual__2024-08-21T07:09:44.473025+00:00 [queued]>
+[2024-08-21T12:09:46.465+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-08-21T12:09:46.477+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): init> on 2024-08-21 07:09:44.473025+00:00
+[2024-08-21T12:09:46.489+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=20339) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-21T12:09:46.490+0500] {standard_task_runner.py:72} INFO - Started process 20367 to run task
+[2024-08-21T12:09:46.490+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_dag', 'init', 'manual__2024-08-21T07:09:44.473025+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/train_models-2.py', '--cfg-path', '/tmp/tmpkxm3xuyl']
+[2024-08-21T12:09:46.492+0500] {standard_task_runner.py:105} INFO - Job 82: Subtask init
+[2024-08-21T12:09:46.548+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_dag.init manual__2024-08-21T07:09:44.473025+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-08-21T12:09:46.638+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_dag' AIRFLOW_CTX_TASK_ID='init' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T07:09:44.473025+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-21T07:09:44.473025+00:00'
+[2024-08-21T12:09:46.640+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-08-21T12:09:46.649+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20240821 12:09'}
+[2024-08-21T12:09:46.677+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-08-21T12:09:46.678+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_dag, task_id=init, run_id=manual__2024-08-21T07:09:44.473025+00:00, execution_date=20240821T070944, start_date=20240821T070946, end_date=20240821T070946
+[2024-08-21T12:09:46.709+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-08-21T12:09:46.734+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-21T12:09:46.737+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,277 @@
+[2024-07-07T23:35:18.397+0500] {processor.py:161} INFO - Started process (PID=13300) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:35:18.398+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:35:18.399+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:35:18.398+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:35:18.402+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:35:18.422+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:35:18.422+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:35:18.432+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:35:18.432+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:35:18.450+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.058 seconds
+[2024-07-07T23:35:49.065+0500] {processor.py:161} INFO - Started process (PID=13648) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:35:49.066+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:35:49.066+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:35:49.066+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:35:49.069+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:35:49.090+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:35:49.090+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:35:49.099+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:35:49.099+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:35:49.117+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.058 seconds
+[2024-07-07T23:36:12.819+0500] {processor.py:161} INFO - Started process (PID=13959) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:12.820+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:36:12.821+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.821+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:12.826+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:12.908+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.908+0500] {override.py:1829} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2024-07-07T23:36:12.923+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.923+0500] {override.py:1829} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2024-07-07T23:36:12.935+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.934+0500] {override.py:1829} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2024-07-07T23:36:12.935+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.935+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:36:12.941+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.941+0500] {dag.py:3118} INFO - Creating ORM DAG for tutorial_dag
+[2024-07-07T23:36:12.942+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:12.941+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:36:12.963+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.148 seconds
+[2024-07-07T23:36:19.775+0500] {processor.py:161} INFO - Started process (PID=14063) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:19.776+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:36:19.776+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:19.776+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:19.779+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:19.798+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:19.798+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:36:19.807+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:19.807+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:36:19.822+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.053 seconds
+[2024-07-07T23:36:50.420+0500] {processor.py:161} INFO - Started process (PID=14454) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:50.421+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:36:50.421+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:50.421+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:50.424+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:36:50.444+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:50.443+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:36:50.452+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:36:50.452+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:36:50.468+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.054 seconds
+[2024-07-07T23:37:04.716+0500] {processor.py:161} INFO - Started process (PID=14754) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:04.724+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:37:04.726+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:04.726+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:04.730+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:04.760+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:04.760+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:37:04.767+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:04.767+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:37:04.790+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.077 seconds
+[2024-07-07T23:37:20.880+0500] {processor.py:161} INFO - Started process (PID=14811) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:20.880+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:37:20.881+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:20.881+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:20.884+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:20.904+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:20.904+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:37:20.914+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:20.914+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:37:20.930+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.056 seconds
+[2024-07-07T23:37:47.521+0500] {processor.py:161} INFO - Started process (PID=15152) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:47.529+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:37:47.531+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:47.531+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:47.535+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:47.545+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:47.545+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:37:47.552+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:47.552+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:37:47.572+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:37:51.293+0500] {processor.py:161} INFO - Started process (PID=15197) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:51.293+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:37:51.294+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:51.294+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:51.297+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:37:51.317+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:51.317+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:37:51.326+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:37:51.326+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:37:51.342+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:38:21.927+0500] {processor.py:161} INFO - Started process (PID=15587) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:21.928+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:38:21.928+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:21.928+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:21.932+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:21.953+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:21.953+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:38:21.961+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:21.961+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:38:21.978+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.057 seconds
+[2024-07-07T23:38:24.844+0500] {processor.py:161} INFO - Started process (PID=15903) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:24.845+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:38:24.846+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:24.846+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:24.849+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:24.859+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:24.859+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:38:24.866+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:24.866+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:38:24.894+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.054 seconds
+[2024-07-07T23:38:52.683+0500] {processor.py:161} INFO - Started process (PID=15972) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:52.684+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:38:52.684+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:52.684+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:52.688+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:38:52.709+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:52.709+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:38:52.718+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:38:52.717+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:38:52.740+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.063 seconds
+[2024-07-07T23:39:05.309+0500] {processor.py:161} INFO - Started process (PID=16295) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:05.318+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:39:05.320+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:05.319+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:05.323+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:05.333+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:05.333+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:39:05.340+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:05.340+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:39:05.364+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.058 seconds
+[2024-07-07T23:39:23.369+0500] {processor.py:161} INFO - Started process (PID=16371) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:23.370+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:39:23.370+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:23.370+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:23.373+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:23.394+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:23.394+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:39:23.403+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:23.403+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:39:23.419+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:39:46.755+0500] {processor.py:161} INFO - Started process (PID=16678) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:46.764+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:39:46.765+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:46.765+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:46.769+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:46.779+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:46.779+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:39:46.786+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:46.786+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:39:46.807+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:39:53.971+0500] {processor.py:161} INFO - Started process (PID=16726) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:53.971+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:39:53.972+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:53.972+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:53.975+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:39:53.995+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:53.995+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:39:54.004+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:39:54.004+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:39:54.020+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:40:24.523+0500] {processor.py:161} INFO - Started process (PID=17156) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:24.524+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:40:24.525+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:24.525+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:24.529+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:24.552+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:24.552+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:40:24.562+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:24.562+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:40:24.581+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.064 seconds
+[2024-07-07T23:40:26.957+0500] {processor.py:161} INFO - Started process (PID=17441) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:26.965+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:40:26.967+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:26.967+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:26.971+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:26.990+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:26.990+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:40:26.998+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:26.998+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:40:27.020+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.067 seconds
+[2024-07-07T23:40:55.327+0500] {processor.py:161} INFO - Started process (PID=17522) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:55.328+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:40:55.328+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:55.328+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:55.331+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:40:55.353+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:55.353+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:40:55.363+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:40:55.363+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:40:55.380+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.060 seconds
+[2024-07-07T23:41:06.171+0500] {processor.py:161} INFO - Started process (PID=17824) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:06.180+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:41:06.181+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:06.181+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:06.187+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:06.199+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:06.199+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:41:06.208+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:06.208+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:41:06.228+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.061 seconds
+[2024-07-07T23:41:26.068+0500] {processor.py:161} INFO - Started process (PID=17932) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:26.069+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:41:26.070+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:26.069+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:26.074+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:26.097+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:26.096+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:41:26.106+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:26.105+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:41:26.123+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.060 seconds
+[2024-07-07T23:41:47.338+0500] {processor.py:161} INFO - Started process (PID=18254) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:47.347+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:41:47.348+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:47.348+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:47.352+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:47.363+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:47.363+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:41:47.370+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:47.370+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:41:47.405+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.071 seconds
+[2024-07-07T23:41:57.042+0500] {processor.py:161} INFO - Started process (PID=18316) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:57.042+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:41:57.043+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:57.043+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:57.047+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:41:57.067+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:57.067+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:41:57.077+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:41:57.076+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:41:57.092+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.057 seconds
+[2024-07-07T23:42:27.379+0500] {processor.py:161} INFO - Started process (PID=18685) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:27.387+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:42:27.389+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:27.388+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:27.392+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:27.402+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:27.402+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:42:27.409+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:27.409+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:42:27.428+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.053 seconds
+[2024-07-07T23:42:28.052+0500] {processor.py:161} INFO - Started process (PID=18725) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:28.052+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:42:28.053+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:28.053+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:28.056+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:28.075+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:28.075+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:42:28.084+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:28.084+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:42:28.100+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.054 seconds
+[2024-07-07T23:42:58.928+0500] {processor.py:161} INFO - Started process (PID=19089) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:58.928+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:42:58.929+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:58.929+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:58.932+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:42:58.954+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:58.954+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:42:58.965+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:42:58.965+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:42:58.983+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.061 seconds
+[2024-07-07T23:43:29.507+0500] {processor.py:161} INFO - Started process (PID=19419) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:43:29.507+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:43:29.508+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:43:29.508+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:43:29.511+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:43:29.531+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:43:29.531+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:43:29.541+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:43:29.540+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:43:29.556+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:44:00.364+0500] {processor.py:161} INFO - Started process (PID=19785) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:44:00.365+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:44:00.365+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:44:00.365+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:44:00.369+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:44:00.389+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:44:00.388+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:44:00.398+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:44:00.397+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:44:00.413+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:44:30.846+0500] {processor.py:161} INFO - Started process (PID=20149) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:44:30.847+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:44:30.847+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:44:30.847+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:44:30.851+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:44:30.871+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:44:30.871+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:44:30.880+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:44:30.880+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:44:30.896+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.057 seconds
+[2024-07-07T23:45:01.411+0500] {processor.py:161} INFO - Started process (PID=20514) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:45:01.412+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:45:01.413+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:45:01.412+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:45:01.416+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:45:01.435+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:45:01.435+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:45:01.445+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:45:01.445+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:45:01.461+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:45:32.175+0500] {processor.py:161} INFO - Started process (PID=20839) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:45:32.176+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:45:32.176+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:45:32.176+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:45:32.180+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:45:32.199+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:45:32.198+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:45:32.207+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:45:32.206+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:45:32.221+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.052 seconds
+[2024-07-07T23:46:02.722+0500] {processor.py:161} INFO - Started process (PID=21177) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:46:02.722+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:46:02.723+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:46:02.723+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:46:02.727+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:46:02.749+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:46:02.749+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:46:02.758+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:46:02.758+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:46:02.777+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.062 seconds
+[2024-07-07T23:46:33.389+0500] {processor.py:161} INFO - Started process (PID=21543) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:46:33.390+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:46:33.390+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:46:33.390+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:46:33.393+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:46:33.414+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:46:33.414+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:46:33.424+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:46:33.423+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:46:33.439+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:47:04.210+0500] {processor.py:161} INFO - Started process (PID=21874) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:47:04.211+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:47:04.211+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:47:04.211+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:47:04.215+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:47:04.235+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:47:04.235+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:47:04.243+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:47:04.243+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:47:04.259+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.054 seconds
+[2024-07-07T23:47:34.716+0500] {processor.py:161} INFO - Started process (PID=22202) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:47:34.717+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:47:34.717+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:47:34.717+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:47:34.720+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:47:34.740+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:47:34.740+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:47:34.750+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:47:34.750+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:47:34.766+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:48:05.322+0500] {processor.py:161} INFO - Started process (PID=22527) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:48:05.323+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:48:05.323+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:48:05.323+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:48:05.327+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:48:05.346+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:48:05.346+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:48:05.355+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:48:05.355+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:48:05.371+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-07T23:48:35.860+0500] {processor.py:161} INFO - Started process (PID=22880) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:48:35.861+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:48:35.862+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:48:35.861+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:48:35.865+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:48:35.883+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:48:35.883+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:48:35.892+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:48:35.891+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:48:35.907+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.053 seconds
+[2024-07-07T23:49:06.973+0500] {processor.py:161} INFO - Started process (PID=23404) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:49:06.974+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:49:06.974+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:49:06.974+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:49:06.978+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:49:07.050+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:49:07.050+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:49:07.058+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:49:07.057+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:49:07.073+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.106 seconds
+[2024-07-07T23:49:37.538+0500] {processor.py:161} INFO - Started process (PID=23761) to work on /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:49:37.539+0500] {processor.py:830} INFO - Processing file /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-07T23:49:37.539+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:49:37.539+0500] {dagbag.py:545} INFO - Filling up the DagBag from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:49:37.542+0500] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-07T23:49:37.562+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:49:37.562+0500] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T23:49:37.571+0500] {logging_mixin.py:188} INFO - [2024-07-07T23:49:37.571+0500] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-07T23:49:37.588+0500] {processor.py:183} INFO - Processing /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.056 seconds
