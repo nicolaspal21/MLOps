@@ -1,0 +1,18 @@
+[2024-10-02T19:21:19.604+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-02T19:21:19.622+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lr_train.init manual__2024-10-02T14:21:17.785381+00:00 [queued]>
+[2024-10-02T19:21:19.630+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lr_train.init manual__2024-10-02T14:21:17.785381+00:00 [queued]>
+[2024-10-02T19:21:19.630+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-02T19:21:19.643+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): init> on 2024-10-02 14:21:17.785381+00:00
+[2024-10-02T19:21:19.657+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=21769) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-02T19:21:19.658+0500] {standard_task_runner.py:72} INFO - Started process 21815 to run task
+[2024-10-02T19:21:19.658+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'lr_train', 'init', 'manual__2024-10-02T14:21:17.785381+00:00', '--job-id', '506', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmpx27e5y5p']
+[2024-10-02T19:21:19.660+0500] {standard_task_runner.py:105} INFO - Job 506: Subtask init
+[2024-10-02T19:21:19.728+0500] {task_command.py:467} INFO - Running <TaskInstance: lr_train.init manual__2024-10-02T14:21:17.785381+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-02T19:21:19.818+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='lr_train' AIRFLOW_CTX_TASK_ID='init' AIRFLOW_CTX_EXECUTION_DATE='2024-10-02T14:21:17.785381+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-02T14:21:17.785381+00:00'
+[2024-10-02T19:21:19.819+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-02T19:21:19.829+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'lr', 'start_timestamp': '20241002 19:21'}
+[2024-10-02T19:21:19.861+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-02T19:21:19.861+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=lr_train, task_id=init, run_id=manual__2024-10-02T14:21:17.785381+00:00, execution_date=20241002T142117, start_date=20241002T142119, end_date=20241002T142119
+[2024-10-02T19:21:19.917+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-02T19:21:19.943+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-02T19:21:19.946+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

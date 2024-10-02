@@ -1,0 +1,18 @@
+[2024-10-02T19:18:18.896+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-02T19:18:18.913+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.get_data manual__2024-10-02T14:18:14.980669+00:00 [queued]>
+[2024-10-02T19:18:18.919+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.get_data manual__2024-10-02T14:18:14.980669+00:00 [queued]>
+[2024-10-02T19:18:18.920+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-02T19:18:18.932+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_data> on 2024-10-02 14:18:14.980669+00:00
+[2024-10-02T19:18:18.946+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=18057) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-02T19:18:18.947+0500] {standard_task_runner.py:72} INFO - Started process 18103 to run task
+[2024-10-02T19:18:18.946+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'get_data', 'manual__2024-10-02T14:18:14.980669+00:00', '--job-id', '482', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-checkpoint.py', '--cfg-path', '/tmp/tmpaaacftla']
+[2024-10-02T19:18:18.947+0500] {standard_task_runner.py:105} INFO - Job 482: Subtask get_data
+[2024-10-02T19:18:19.002+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.get_data manual__2024-10-02T14:18:14.980669+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-02T19:18:19.084+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-02T14:18:14.980669+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-02T14:18:14.980669+00:00'
+[2024-10-02T19:18:19.085+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-02T19:18:19.094+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'rf', 'start_tiemstamp': '20241002 19:18'}
+[2024-10-02T19:18:19.122+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-02T19:18:19.122+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=rf_train, task_id=get_data, run_id=manual__2024-10-02T14:18:14.980669+00:00, execution_date=20241002T141814, start_date=20241002T141818, end_date=20241002T141819
+[2024-10-02T19:18:19.161+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-02T19:18:19.186+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-02T19:18:19.188+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

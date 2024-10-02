@@ -1,0 +1,166 @@
+[2024-10-02T19:11:32.850+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-02T19:11:32.875+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.train_model manual__2024-10-02T14:11:19.415306+00:00 [queued]>
+[2024-10-02T19:11:32.882+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.train_model manual__2024-10-02T14:11:19.415306+00:00 [queued]>
+[2024-10-02T19:11:32.882+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-02T19:11:32.899+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_model> on 2024-10-02 14:11:19.415306+00:00
+[2024-10-02T19:11:32.916+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'train_model', 'manual__2024-10-02T14:11:19.415306+00:00', '--job-id', '472', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-checkpoint.py', '--cfg-path', '/tmp/tmp3dnsgr3a']
+[2024-10-02T19:11:32.920+0500] {standard_task_runner.py:105} INFO - Job 472: Subtask train_model
+[2024-10-02T19:11:32.920+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10682) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-02T19:11:32.920+0500] {standard_task_runner.py:72} INFO - Started process 10758 to run task
+[2024-10-02T19:11:32.989+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.train_model manual__2024-10-02T14:11:19.415306+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-02T19:11:33.079+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-02T14:11:19.415306+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-02T14:11:19.415306+00:00'
+[2024-10-02T19:11:33.080+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-02T19:11:33.107+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path dataset/X_train.pkl
+[2024-10-02T19:11:33.121+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-02T19:11:33.121+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-10-02T19:11:33.994+0500] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-checkpoint.py", line 109, in train_model
+    file = s3_hook.download_file(key=f'dataset/{name}.pkl', bucket_name=BUCKET)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1397, in download_file
+    raise e
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1390, in download_file
+    s3_obj = self.get_key(key, bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 948, in get_key
+    obj.load(**sanitize_extra_args())
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/boto3/resources/factory.py", line 565, in do_action
+    response = action(self, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/boto3/resources/action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/botocore/client.py", line 565, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/botocore/client.py", line 1021, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+[2024-10-02T19:11:34.018+0500] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=rf_train, task_id=train_model, run_id=manual__2024-10-02T14:11:19.415306+00:00, execution_date=20241002T141119, start_date=20241002T141132, end_date=20241002T141134
+[2024-10-02T19:11:34.031+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-02T19:11:34.031+0500] {standard_task_runner.py:124} ERROR - Failed to execute job 472 for task train_model (An error occurred (404) when calling the HeadObject operation: Not Found; 10758)
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-checkpoint.py", line 109, in train_model
+    file = s3_hook.download_file(key=f'dataset/{name}.pkl', bucket_name=BUCKET)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1397, in download_file
+    raise e
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 1390, in download_file
+    s3_obj = self.get_key(key, bucket_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 948, in get_key
+    obj.load(**sanitize_extra_args())
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/boto3/resources/factory.py", line 565, in do_action
+    response = action(self, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/boto3/resources/action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/botocore/client.py", line 565, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/botocore/client.py", line 1021, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+[2024-10-02T19:11:34.064+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-10-02T19:11:34.087+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-02T19:11:34.092+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,43 @@
+[2024-10-02T18:57:30.563+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-02T18:57:30.594+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lr_train.prepare_data scheduled__2024-10-01T01:00:00+00:00 [queued]>
+[2024-10-02T18:57:30.604+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lr_train.prepare_data scheduled__2024-10-01T01:00:00+00:00 [queued]>
+[2024-10-02T18:57:30.605+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-02T18:57:30.620+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-01 01:00:00+00:00
+[2024-10-02T18:57:30.636+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=274878) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-02T18:57:30.637+0500] {standard_task_runner.py:72} INFO - Started process 274935 to run task
+[2024-10-02T18:57:30.637+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'lr_train', 'prepare_data', 'scheduled__2024-10-01T01:00:00+00:00', '--job-id', '459', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/train_models-checkpoint.py', '--cfg-path', '/tmp/tmpq88kew0b']
+[2024-10-02T18:57:30.639+0500] {standard_task_runner.py:105} INFO - Job 459: Subtask prepare_data
+[2024-10-02T18:57:30.704+0500] {task_command.py:467} INFO - Running <TaskInstance: lr_train.prepare_data scheduled__2024-10-01T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-02T18:57:30.793+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='lr_train' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-01T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-01T01:00:00+00:00'
+[2024-10-02T18:57:30.794+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-02T18:57:30.820+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'lr', 'start_tiemstamp': '20241002 18:57'}
+[2024-10-02T18:57:30.855+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-02T18:57:30.855+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=lr_train, task_id=prepare_data, run_id=scheduled__2024-10-01T01:00:00+00:00, execution_date=20241001T010000, start_date=20241002T135730, end_date=20241002T135730
+[2024-10-02T18:57:30.891+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-02T18:57:30.917+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-02T18:57:30.921+0500] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2024-10-02T19:19:10.964+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-02T19:19:10.982+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lr_train.prepare_data scheduled__2024-10-01T01:00:00+00:00 [queued]>
+[2024-10-02T19:19:10.989+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lr_train.prepare_data scheduled__2024-10-01T01:00:00+00:00 [queued]>
+[2024-10-02T19:19:10.989+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-02T19:19:11.000+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-01 01:00:00+00:00
+[2024-10-02T19:19:11.013+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=19135) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-02T19:19:11.014+0500] {standard_task_runner.py:72} INFO - Started process 19181 to run task
+[2024-10-02T19:19:11.013+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'lr_train', 'prepare_data', 'scheduled__2024-10-01T01:00:00+00:00', '--job-id', '490', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmp3p3kf44y']
+[2024-10-02T19:19:11.015+0500] {standard_task_runner.py:105} INFO - Job 490: Subtask prepare_data
+[2024-10-02T19:19:11.077+0500] {task_command.py:467} INFO - Running <TaskInstance: lr_train.prepare_data scheduled__2024-10-01T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-02T19:19:11.158+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='lr_train' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-01T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-01T01:00:00+00:00'
+[2024-10-02T19:19:11.159+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-02T19:19:11.192+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path datasets/california_housing.pkl
+[2024-10-02T19:19:11.206+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-02T19:19:11.207+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-10-02T19:19:15.460+0500] {train_models.py:99} INFO - Данные для обработки из S3 загружены
+[2024-10-02T19:19:15.523+0500] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-02T19:19:15.524+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-10-02T19:19:19.204+0500] {train_models.py:127} INFO - Данные подготовлены и сохранены на S3
+[2024-10-02T19:19:19.207+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'lr', 'start_tiemstamp': '20241002 19:19', 'prepare_data_time,sec': 8.0}
+[2024-10-02T19:19:19.246+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-02T19:19:19.246+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=lr_train, task_id=prepare_data, run_id=scheduled__2024-10-01T01:00:00+00:00, execution_date=20241001T010000, start_date=20241002T141910, end_date=20241002T141919
+[2024-10-02T19:19:19.280+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-02T19:19:19.307+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-02T19:19:19.311+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -4,6 +4,7 @@ import logging
 import numpy as np
 import pandas as pd
 import pickle
+import time
 
 from sklearn.datasets import fetch_california_housing
 from sqlalchemy import create_engine
@@ -46,52 +47,89 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
     def init() -> Dict[str, Any]:
         metrics = {}
         metrics["model"] = m_name
-        metrics["start_tiemstamp"] = datetime.now().strftime("%Y%m%d %H:%M")
+        metrics["start_timestamp"] = datetime.now().strftime("%Y%m%d %H:%M")
         return metrics 
 
     # функция чтения из postgres и загрузки на s3
-    def get_data_from_postgres(**kwargs) -> Dict[str, Any]:
+    def get_data(**kwargs) -> Dict[str, Any]:
 
         ti = kwargs["ti"]
-        metrics = ti.xcom_pull(task_ids = "init")
-        
-        # # хук для чтения данных (хуки - инструменты взаимодействия с внешними данными)
-        # # используем ранее созданный PG connection
-        # # pg_hook = PostgresHook("pg_connection")
-        # # con = pg_hook.get_conn()
-        
-        # # c помощью конекшена читаем данные из california_housing
-        # #data = pd.read_sql_query("SELECT * FROM california_housing", con)
-    
-        # data_initial = fetch_california_housing()
-        # # Объединим фичи и таргет в один np.array
-        # dataset = np.concatenate([data_initial['data'], data_initial['target'].reshape([data_initial['target'].shape[0],1])],axis=1)
-        # # Преобразуем в dataframe.
-        # data= pd.DataFrame(dataset, columns = data_initial['feature_names']+data_initial['target_names'])
-        
-    
-        # # положим данные в S3 на яндекс клоуд, для этого используем созданный ранее S3 хук
-        # # используем созданный ранее s3 connection
-        # #s3_hook = S3Hook("s3_connection")
-        # s3_hook = S3Hook("aws_default")
-        # #session = s3_hook.get_session("kz1")
-        # session = s3_hook.get_session("eu-north-1")
-        # resource = session.resource("s3")
-    
-        # # положим датасет как пикл на S3
-        # pickle_byte_obj = pickle.dumps(data)
-        # resource.Object(BUCKET, DATA_PATH).put(Body=pickle_byte_obj)
-    
-        # # добавим лог что загрузка данных завершена
-        # _LOG.info("Data download finished.")
+        metrics = ti.xcom_pull(task_ids="init")
+        # время начало загрузки
+        metrics["data_download_start"] = datetime.now().strftime("%Y%m%d %H:%M")
 
-        return metrics 
+        # Используем созданный ранее PG connection
+        pg_hook = PostgresHook("pg_connection")
+        con = pg_hook.get_conn()
+
+        # Читаем все данные из таблицы california_housing
+        data = pd.read_sql_query("SELECT * FROM california_housing", con)
+
+        # сохраняем результаты обучения на s3
+        s3_hook = S3Hook("aws_default")
+        session = s3_hook.get_session("eu-north-1")
+        resource = session.resource("s3")
+
+        # Сохраняем файл в формате pkl на S3
+        pickle_byte_obj = pickle.dumps(data)
+        resource.Object(BUCKET, DATA_PATH).put(Body=pickle_byte_obj)
+
+        _LOG.info("Данные загружены из б/д и сохранены на S3")
+
+        # время конца загрузки
+        metrics["data_download_end"] = datetime.now().strftime("%Y%m%d %H:%M")
+        
+        # размер датасета
+        metrics["data_shape"] = data.shape
+
+        return metrics  
 
     def prepare_data(**kwargs) -> Dict[str, Any]:
+        
         ti = kwargs["ti"]
         metrics = ti.xcom_pull(task_ids = "get_data")
+        
+        start_time = time.time()
+        
+        # скачиваем данные с s3
+        s3_hook = S3Hook("aws_default")
+        file = s3_hook.download_file(key=DATA_PATH, bucket_name=BUCKET)
+        data = pd.read_pickle(file)
+        
+        _LOG.info("Данные для обработки из S3 загружены")
 
-        return metrics 
+        # Обработка
+        # Делим на фичи и таргет
+        X, y = data[FEATURES], data[TARGET]
+
+        # Разделить данные на обучение и тест
+        X_train, X_test, y_train, y_test = train_test_split(X,
+                                                            y,
+                                                            test_size=0.2,
+                                                            random_state=42)
+
+        # Обучить стандартизатор на train
+        scaler = StandardScaler()
+        X_train_fitted = scaler.fit_transform(X_train)
+        X_test_fitted = scaler.transform(X_test)
+
+        # Сохранить готовые данные на S3
+        s3_hook = S3Hook("aws_default")
+        session = s3_hook.get_session("eu-north-1")
+        resource = session.resource("s3")
+        
+        for name, data in zip(["X_train", "X_test", "y_train", "y_test"],
+                          [X_train_fitted, X_test_fitted, y_train, y_test]):
+            pickle_byte_obj = pickle.dumps(data)
+            resource.Object(BUCKET,
+                            f"datasets/{name}.pkl").put(Body=pickle_byte_obj)
+        
+        _LOG.info("Данные подготовлены и сохранены на S3")
+
+        end_time = time.time()
+        metrics["prepare_data_time,sec"] = round(end_time - start_time, 1)
+        
+        return metrics
 
 
     def train_model(**kwargs) -> Dict[str, Any]:
@@ -102,18 +140,18 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         m_name = metrics["model"] 
 
         # считываем данные из s3
-        #s3_hook = S3Hook("s3_connection")
         s3_hook = S3Hook("aws_default")
+        
         data = {}
         for name in ["X_train", "X_test", "y_train", "y_test"]:
-            file = s3_hook.download_file(key=f'dataset/{name}.pkl', bucket_name=BUCKET)
+            file = s3_hook.download_file(key=f'datasets/{name}.pkl', bucket_name=BUCKET)
             data[name] = pd.read_pickle(file)
     
-        _LOG.info("Данные загружены")
+        _LOG.info("Данные для обучения модели из S3 загружены")
 
-            # обучаем модель
+        start_time = time.time()
         
-    
+        # обучаем модель
         X_train = data["X_train"].copy()
         y_train = data["y_train"].copy()
 
@@ -131,6 +169,12 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         metrics['R^2_score'] = r2_score(y_test, prediction)
         metrics['rmse'] = mean_squared_error(y_test, prediction)**0.5
         metrics['mae'] = median_absolute_error(y_test, prediction)
+        
+        end_time = time.time()
+        
+        _LOG.info("Модели обучены, метрики сохранены")
+        
+        metrics["train_model, sec"] = round(end_time - start_time,1)
 
         return metrics 
 
@@ -153,6 +197,8 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         json_byte_object = json.dumps(metrics)
         resource.Object(BUCKET, f'result/{metrics['model']}_{date}.json').put(Body=json_byte_object)
 
+        _LOG.info("Результаты сохранены в папку result")
+
     dag = DAG(
         dag_id = dag_id,   # уникальный id, можно использовать имя модели
         schedule_interval = "0 1 * * *",  # расписание: раз в день по ночам
@@ -162,9 +208,9 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         default_args = DEFAULT_ARGS)    
 
     with dag:
-        task_init = PythonOperator(task_id="init", python_callable=get_data_from_postgres, dag=dag, provide_context=True)
+        task_init = PythonOperator(task_id="init", python_callable=init, dag=dag, provide_context=True)
 
-        task_get_data = PythonOperator(task_id="get_data", python_callable=init, dag=dag, provide_context=True)
+        task_get_data = PythonOperator(task_id="get_data", python_callable=get_data, dag=dag, provide_context=True)
         
         task_prepare_data = PythonOperator(task_id="prepare_data", python_callable=prepare_data, dag=dag, provide_context=True)
             
