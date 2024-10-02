@@ -315,3 +315,57 @@
 [2024-10-02T19:53:23.768+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:53:23.768+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
 [2024-10-02T19:53:23.768+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
 [2024-10-02T19:53:23.785+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 0.907 seconds
+[2024-10-02T19:53:54.032+0500] {processor.py:186} INFO - Started process (PID=54471) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:53:54.033+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py for tasks to queue
+[2024-10-02T19:53:54.034+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:53:54.034+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:53:54.901+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:53:54.921+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:53:54.920+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-02T19:53:54.921+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-02T19:53:54.937+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:53:54.936+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:53:54.937+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:53:54.960+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 0.932 seconds
+[2024-10-02T19:54:25.079+0500] {processor.py:186} INFO - Started process (PID=55121) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:54:25.092+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py for tasks to queue
+[2024-10-02T19:54:25.095+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:25.094+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:54:26.088+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:54:26.109+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:26.108+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-02T19:54:26.109+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-02T19:54:26.126+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:26.125+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:54:26.126+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:54:26.153+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 1.078 seconds
+[2024-10-02T19:54:56.362+0500] {processor.py:186} INFO - Started process (PID=55604) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:54:56.363+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py for tasks to queue
+[2024-10-02T19:54:56.364+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:56.364+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:54:57.202+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:54:57.225+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:57.225+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-02T19:54:57.225+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-02T19:54:57.241+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:57.241+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:54:57.241+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:54:57.256+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 0.898 seconds
+[2024-10-02T19:55:27.571+0500] {processor.py:186} INFO - Started process (PID=56110) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:55:27.580+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py for tasks to queue
+[2024-10-02T19:55:27.581+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:27.581+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:55:28.404+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:55:28.424+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:28.424+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-02T19:55:28.425+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-02T19:55:28.442+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:28.442+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:55:28.442+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:55:28.457+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 0.891 seconds
+[2024-10-02T19:55:59.215+0500] {processor.py:186} INFO - Started process (PID=56592) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:55:59.218+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py for tasks to queue
+[2024-10-02T19:55:59.220+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:59.220+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:56:00.080+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:56:00.100+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:00.100+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-02T19:56:00.101+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-02T19:56:00.116+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:00.115+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:56:00.116+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:56:00.143+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 0.932 seconds
+[2024-10-02T19:56:30.507+0500] {processor.py:186} INFO - Started process (PID=57228) to work on /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:56:30.508+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py for tasks to queue
+[2024-10-02T19:56:30.509+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:30.509+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:56:31.350+0500] {processor.py:925} INFO - DAG(s) '3_models_dag' retrieved from /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py
+[2024-10-02T19:56:31.373+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:31.373+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-02T19:56:31.373+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-02T19:56:31.390+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:31.390+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:56:31.390+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_dag to 2024-10-01 01:00:00+00:00, run_after=2024-10-02 01:00:00+00:00
+[2024-10-02T19:56:31.413+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/.ipynb_checkpoints/train_models-2-checkpoint.py took 0.910 seconds

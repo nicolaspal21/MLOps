@@ -453,3 +453,68 @@
 [2024-10-02T19:53:50.941+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:53:50.941+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
 [2024-10-02T19:53:50.941+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
 [2024-10-02T19:53:50.963+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models.py took 0.897 seconds
+[2024-10-02T19:54:21.527+0500] {processor.py:186} INFO - Started process (PID=55029) to work on /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:54:21.528+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/train_models.py for tasks to queue
+[2024-10-02T19:54:21.530+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:21.530+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:54:22.781+0500] {processor.py:925} INFO - DAG(s) 'lr_train', 'rf_train', 'hgb_train' retrieved from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:54:22.945+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:22.944+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-02T19:54:22.945+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-02T19:54:22.969+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:22.969+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:22.969+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:22.974+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:22.974+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:22.974+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:22.977+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:22.977+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:22.977+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:23.011+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models.py took 1.489 seconds
+[2024-10-02T19:54:53.380+0500] {processor.py:186} INFO - Started process (PID=55549) to work on /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:54:53.381+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/train_models.py for tasks to queue
+[2024-10-02T19:54:53.383+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:53.383+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:54:54.237+0500] {processor.py:925} INFO - DAG(s) 'hgb_train', 'rf_train', 'lr_train' retrieved from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:54:54.264+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:54.264+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-02T19:54:54.264+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-02T19:54:54.282+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:54.282+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:54.282+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:54.286+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:54.286+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:54.286+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:54.288+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:54:54.287+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:54.288+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:54:54.309+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models.py took 0.934 seconds
+[2024-10-02T19:55:24.607+0500] {processor.py:186} INFO - Started process (PID=56054) to work on /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:55:24.615+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/train_models.py for tasks to queue
+[2024-10-02T19:55:24.617+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:24.617+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:55:25.457+0500] {processor.py:925} INFO - DAG(s) 'lr_train', 'hgb_train', 'rf_train' retrieved from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:55:25.471+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:25.471+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-02T19:55:25.471+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-02T19:55:25.491+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:25.491+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:25.491+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:25.494+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:25.494+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:25.495+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:25.496+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:25.496+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:25.496+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:25.518+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models.py took 0.916 seconds
+[2024-10-02T19:55:56.194+0500] {processor.py:186} INFO - Started process (PID=56522) to work on /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:55:56.203+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/train_models.py for tasks to queue
+[2024-10-02T19:55:56.204+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:56.204+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:55:57.058+0500] {processor.py:925} INFO - DAG(s) 'lr_train', 'rf_train', 'hgb_train' retrieved from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:55:57.149+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:57.149+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-02T19:55:57.149+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-02T19:55:57.165+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:57.165+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:57.165+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:57.168+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:57.168+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:57.169+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:57.171+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:55:57.170+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:57.171+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:55:57.195+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models.py took 1.005 seconds
+[2024-10-02T19:56:27.548+0500] {processor.py:186} INFO - Started process (PID=57153) to work on /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:56:27.549+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/train_models.py for tasks to queue
+[2024-10-02T19:56:27.550+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:27.550+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:56:28.383+0500] {processor.py:925} INFO - DAG(s) 'rf_train', 'lr_train', 'hgb_train' retrieved from /home/nicolaspc/airflow/dags/train_models.py
+[2024-10-02T19:56:28.409+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:28.409+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-02T19:56:28.409+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-02T19:56:28.428+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:28.428+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:56:28.428+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:56:28.431+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:28.431+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:56:28.431+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:56:28.433+0500] {logging_mixin.py:190} INFO - [2024-10-02T19:56:28.433+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:56:28.433+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-02 01:00:00+00:00, run_after=2024-10-03 01:00:00+00:00
+[2024-10-02T19:56:28.454+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/train_models.py took 0.911 seconds
