@@ -35,7 +35,7 @@ _LOG = logging.getLogger()
 _LOG.addHandler(logging.StreamHandler())
 
 BUCKET = "test-bucket-nicolas-1"
-DATA_PATH = "datasets/california_housing.pkl"
+
 FEATURES = ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population", "AveOccup", "Latitude", "Longitude"]
 TARGET = "MedHouseVal"
 
@@ -62,17 +62,24 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         pg_hook = PostgresHook("pg_connection")
         con = pg_hook.get_conn()
 
+        # качаем данные
+        data_initial = fetch_california_housing()
+        # Объединим фичи и таргет в один np.array
+        dataset = np.concatenate([data_initial['data'], data_initial['target'].reshape([data_initial['target'].shape[0],1])],axis=1)
+        # Преобразуем в dataframe.
+        data= pd.DataFrame(dataset, columns = data_initial['feature_names']+data_initial['target_names'])
+
         # Читаем все данные из таблицы california_housing
-        data = pd.read_sql_query("SELECT * FROM california_housing", con)
+        #data = pd.read_sql_query("SELECT * FROM california_housing", con)
 
         # сохраняем результаты обучения на s3
-        s3_hook = S3Hook("aws_default")
+        s3_hook = S3Hook("s3_connection")
         session = s3_hook.get_session("eu-north-1")
         resource = session.resource("s3")
 
         # Сохраняем файл в формате pkl на S3
         pickle_byte_obj = pickle.dumps(data)
-        resource.Object(BUCKET, DATA_PATH).put(Body=pickle_byte_obj)
+        resource.Object(BUCKET,f"{m_name}/datasets/california_housing.pkl").put(Body=pickle_byte_obj)
 
         _LOG.info("Данные загружены из б/д и сохранены на S3")
 
@@ -92,8 +99,8 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         start_time = time.time()
         
         # скачиваем данные с s3
-        s3_hook = S3Hook("aws_default")
-        file = s3_hook.download_file(key=DATA_PATH, bucket_name=BUCKET)
+        s3_hook = S3Hook("s3_connection")
+        file = s3_hook.download_file(key=f"{m_name}/datasets/california_housing.pkl", bucket_name=BUCKET)
         data = pd.read_pickle(file)
         
         _LOG.info("Данные для обработки из S3 загружены")
@@ -114,7 +121,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         X_test_fitted = scaler.transform(X_test)
 
         # Сохранить готовые данные на S3
-        s3_hook = S3Hook("aws_default")
+        s3_hook = S3Hook("s3_connection")
         session = s3_hook.get_session("eu-north-1")
         resource = session.resource("s3")
         
@@ -122,7 +129,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
                           [X_train_fitted, X_test_fitted, y_train, y_test]):
             pickle_byte_obj = pickle.dumps(data)
             resource.Object(BUCKET,
-                            f"datasets/{name}.pkl").put(Body=pickle_byte_obj)
+                            f"{m_name}/datasets/{name}.pkl").put(Body=pickle_byte_obj)
         
         _LOG.info("Данные подготовлены и сохранены на S3")
 
@@ -140,11 +147,11 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         m_name = metrics["model"] 
 
         # считываем данные из s3
-        s3_hook = S3Hook("aws_default")
+        s3_hook = S3Hook("s3_connection")
         
         data = {}
         for name in ["X_train", "X_test", "y_train", "y_test"]:
-            file = s3_hook.download_file(key=f'datasets/{name}.pkl', bucket_name=BUCKET)
+            file = s3_hook.download_file(key=f'{m_name}/datasets/{name}.pkl', bucket_name=BUCKET)
             data[name] = pd.read_pickle(file)
     
         _LOG.info("Данные для обучения модели из S3 загружены")
@@ -164,8 +171,8 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         metrics["train_end"] = datetime.now().strftime("%Y%m%d %H:%M")
     
         y_test = data["y_test"].copy()
+        
         # метрики
-        #result = {}
         metrics['R^2_score'] = r2_score(y_test, prediction)
         metrics['rmse'] = mean_squared_error(y_test, prediction)**0.5
         metrics['mae'] = median_absolute_error(y_test, prediction)
@@ -186,16 +193,16 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
 
         metrics["end_tiemstamp"] = datetime.now().strftime("%Y%m%d %H:%M")
 
-        s3_hook = S3Hook("aws_default")
+        s3_hook = S3Hook("s3_connection")
         # сохраняем результаты обучения на s3
         date = datetime.now().strftime("%Y_%m_%d_%H")
-        #session = s3_hook.get_session("kz1")
+
         session = s3_hook.get_session("eu-north-1")
         resource = session.resource("s3")
     
         # сохраним в формате json на s3 в бакет в папку results
         json_byte_object = json.dumps(metrics)
-        resource.Object(BUCKET, f'result/{metrics['model']}_{date}.json').put(Body=json_byte_object)
+        resource.Object(BUCKET, f'{m_name}/result/{metrics['model']}_{date}.json').put(Body=json_byte_object)
 
         _LOG.info("Результаты сохранены в папку result")
 
