@@ -56,7 +56,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         ti = kwargs["ti"]
         metrics = ti.xcom_pull(task_ids="init")
         # время начало загрузки
-        metrics["data_download_start"] = datetime.now().strftime("%Y%m%d %H:%M")
+        metrics["get_data_start"] = datetime.now().strftime("%Y%m%d %H:%M")
 
         # Используем созданный ранее PG connection
         pg_hook = PostgresHook("pg_connection")
@@ -79,12 +79,12 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
 
         # Сохраняем файл в формате pkl на S3
         pickle_byte_obj = pickle.dumps(data)
-        resource.Object(BUCKET,f"{m_name}/datasets/california_housing.pkl").put(Body=pickle_byte_obj)
+        resource.Object(BUCKET,f"NicolasPal/{m_name}/datasets/california_housing.pkl").put(Body=pickle_byte_obj)
 
         _LOG.info("Данные загружены из б/д и сохранены на S3")
 
         # время конца загрузки
-        metrics["data_download_end"] = datetime.now().strftime("%Y%m%d %H:%M")
+        metrics["get_data_end"] = datetime.now().strftime("%Y%m%d %H:%M")
         
         # размер датасета
         metrics["data_shape"] = data.shape
@@ -96,11 +96,11 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         ti = kwargs["ti"]
         metrics = ti.xcom_pull(task_ids = "get_data")
         
-        start_time = time.time()
+        metrics["prepare_data_start"] = datetime.now().strftime("%Y%m%d %H:%M")
         
         # скачиваем данные с s3
         s3_hook = S3Hook("s3_connection")
-        file = s3_hook.download_file(key=f"{m_name}/datasets/california_housing.pkl", bucket_name=BUCKET)
+        file = s3_hook.download_file(key=f"NicolasPal/{m_name}/datasets/california_housing.pkl", bucket_name=BUCKET)
         data = pd.read_pickle(file)
         
         _LOG.info("Данные для обработки из S3 загружены")
@@ -129,13 +129,14 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
                           [X_train_fitted, X_test_fitted, y_train, y_test]):
             pickle_byte_obj = pickle.dumps(data)
             resource.Object(BUCKET,
-                            f"{m_name}/datasets/{name}.pkl").put(Body=pickle_byte_obj)
+                            f"NicolasPal/{m_name}/datasets/{name}.pkl").put(Body=pickle_byte_obj)
         
         _LOG.info("Данные подготовлены и сохранены на S3")
-
-        end_time = time.time()
-        metrics["prepare_data_time,sec"] = round(end_time - start_time, 1)
         
+        metrics["prepare_data_end"] = datetime.now().strftime("%Y%m%d %H:%M")
+        
+        metrics["features_name"] = FEATURES
+
         return metrics
 
 
@@ -143,6 +144,8 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         
         ti = kwargs["ti"]
         metrics = ti.xcom_pull(task_ids = "prepare_data")
+        
+        metrics["train_model_start"] = datetime.now().strftime("%Y%m%d %H:%M")
 
         m_name = metrics["model"] 
 
@@ -151,12 +154,10 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         
         data = {}
         for name in ["X_train", "X_test", "y_train", "y_test"]:
-            file = s3_hook.download_file(key=f'{m_name}/datasets/{name}.pkl', bucket_name=BUCKET)
+            file = s3_hook.download_file(key=f'NicolasPal/{m_name}/datasets/{name}.pkl', bucket_name=BUCKET)
             data[name] = pd.read_pickle(file)
     
         _LOG.info("Данные для обучения модели из S3 загружены")
-
-        start_time = time.time()
         
         # обучаем модель
         X_train = data["X_train"].copy()
@@ -164,25 +165,21 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
 
         model = models[m_name]
         
-        metrics["train_start"] = datetime.now().strftime("%Y%m%d %H:%M")
         model.fit(X_train, y_train)
         
         prediction = model.predict(data["X_test"])
-        metrics["train_end"] = datetime.now().strftime("%Y%m%d %H:%M")
     
         y_test = data["y_test"].copy()
         
-        # метрики
-        metrics['R^2_score'] = r2_score(y_test, prediction)
-        metrics['rmse'] = mean_squared_error(y_test, prediction)**0.5
-        metrics['mae'] = median_absolute_error(y_test, prediction)
+        metrics["train_model_end"] = datetime.now().strftime("%Y%m%d %H:%M")
         
-        end_time = time.time()
+        # метрики
+        metrics['R^2_score'] = round(r2_score(y_test, prediction),2)
+        metrics['rmse'] = round(mean_squared_error(y_test, prediction)**0.5,2)
+        metrics['mae'] = round(median_absolute_error(y_test, prediction),2)
         
         _LOG.info("Модели обучены, метрики сохранены")
         
-        metrics["train_model, sec"] = round(end_time - start_time,1)
-
         return metrics 
 
         
@@ -202,7 +199,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
     
         # сохраним в формате json на s3 в бакет в папку results
         json_byte_object = json.dumps(metrics)
-        resource.Object(BUCKET, f'{m_name}/result/{metrics['model']}_{date}.json').put(Body=json_byte_object)
+        resource.Object(BUCKET, f'NicolasPal/{m_name}/result/{metrics['model']}_{date}.json').put(Body=json_byte_object)
 
         _LOG.info("Результаты сохранены в папку result")
 
