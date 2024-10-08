@@ -1,0 +1,25 @@
+[2024-10-08T14:31:15.914+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T14:31:15.933+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.prepare_data scheduled__2024-10-07T01:00:00+00:00 [queued]>
+[2024-10-08T14:31:15.942+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.prepare_data scheduled__2024-10-07T01:00:00+00:00 [queued]>
+[2024-10-08T14:31:15.942+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T14:31:15.953+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-07 01:00:00+00:00
+[2024-10-08T14:31:15.966+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=48483) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T14:31:15.967+0500] {standard_task_runner.py:72} INFO - Started process 48567 to run task
+[2024-10-08T14:31:15.967+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'prepare_data', 'scheduled__2024-10-07T01:00:00+00:00', '--job-id', '741', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmpuvgbmkpi']
+[2024-10-08T14:31:15.969+0500] {standard_task_runner.py:105} INFO - Job 741: Subtask prepare_data
+[2024-10-08T14:31:16.029+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.prepare_data scheduled__2024-10-07T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T14:31:16.115+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-07T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-07T01:00:00+00:00'
+[2024-10-08T14:31:16.115+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T14:31:16.139+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/rf/datasets/california_housing.pkl
+[2024-10-08T14:31:16.151+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T14:31:16.152+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T14:31:19.452+0500] {train_models.py:106} INFO - Данные для обработки из S3 загружены
+[2024-10-08T14:31:19.473+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T14:31:19.474+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T14:31:22.579+0500] {train_models.py:134} INFO - Данные подготовлены и сохранены на S3
+[2024-10-08T14:31:22.581+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'rf', 'start_timestamp': '20241008 14:31', 'get_data_start': '20241008 14:31', 'get_data_end': '20241008 14:31', 'data_shape': [20640, 9], 'prepare_data_start': '20241008 14:31', 'prepare_data_end': '20241008 14:31', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']}
+[2024-10-08T14:31:22.615+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T14:31:22.616+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=rf_train, task_id=prepare_data, run_id=scheduled__2024-10-07T01:00:00+00:00, execution_date=20241007T010000, start_date=20241008T093115, end_date=20241008T093122
+[2024-10-08T14:31:22.686+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-08T14:31:22.716+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T14:31:22.719+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

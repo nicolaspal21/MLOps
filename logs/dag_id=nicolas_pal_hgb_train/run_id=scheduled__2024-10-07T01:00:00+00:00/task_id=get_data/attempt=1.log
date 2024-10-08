@@ -1,0 +1,22 @@
+[2024-10-08T19:42:35.727+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T19:42:35.747+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nicolas_pal_hgb_train.get_data scheduled__2024-10-07T01:00:00+00:00 [queued]>
+[2024-10-08T19:42:35.754+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nicolas_pal_hgb_train.get_data scheduled__2024-10-07T01:00:00+00:00 [queued]>
+[2024-10-08T19:42:35.755+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T19:42:35.766+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_data> on 2024-10-07 01:00:00+00:00
+[2024-10-08T19:42:35.779+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=275648) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T19:42:35.780+0500] {standard_task_runner.py:72} INFO - Started process 275710 to run task
+[2024-10-08T19:42:35.781+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'nicolas_pal_hgb_train', 'get_data', 'scheduled__2024-10-07T01:00:00+00:00', '--job-id', '773', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmpjwbh0m6o']
+[2024-10-08T19:42:35.782+0500] {standard_task_runner.py:105} INFO - Job 773: Subtask get_data
+[2024-10-08T19:42:35.840+0500] {task_command.py:467} INFO - Running <TaskInstance: nicolas_pal_hgb_train.get_data scheduled__2024-10-07T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T19:42:35.929+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='nicolas_pal_hgb_train' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-07T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-07T01:00:00+00:00'
+[2024-10-08T19:42:35.930+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T19:42:36.164+0500] {base.py:84} INFO - Retrieving connection 'pg_connection'
+[2024-10-08T19:42:36.197+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T19:42:36.197+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T19:42:43.701+0500] {train_models.py:108} INFO - Данные загружены из б/д и сохранены на S3
+[2024-10-08T19:42:43.704+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'nicolas_pal_hgb', 'start_timestamp': '20241008 19:42', 'experiment_id': '138', 'get_data_start': '20241008 19:42', 'get_data_end': '20241008 19:42', 'data_shape': (20640, 9)}
+[2024-10-08T19:42:43.735+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T19:42:43.735+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=nicolas_pal_hgb_train, task_id=get_data, run_id=scheduled__2024-10-07T01:00:00+00:00, execution_date=20241007T010000, start_date=20241008T144235, end_date=20241008T144243
+[2024-10-08T19:42:43.775+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-08T19:42:43.800+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T19:42:43.802+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

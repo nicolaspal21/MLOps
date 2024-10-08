@@ -1,0 +1,26 @@
+[2024-10-08T21:53:52.403+0500] {processor.py:186} INFO - Started process (PID=66593) to work on /home/nicolaspc/airflow/dags/project_1.py
+[2024-10-08T21:53:52.403+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_1.py for tasks to queue
+[2024-10-08T21:53:52.404+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:53:52.404+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_1.py
+[2024-10-08T21:53:53.435+0500] {processor.py:925} INFO - DAG(s) 'hgb_train', 'lr_train', 'rf_train' retrieved from /home/nicolaspc/airflow/dags/project_1.py
+[2024-10-08T21:53:53.524+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:53:53.524+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-08T21:53:53.525+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-08T21:53:53.540+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:53:53.540+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:53:53.541+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:53:53.544+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:53:53.543+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:53:53.544+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:53:53.546+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:53:53.545+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:53:53.546+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:53:53.563+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_1.py took 1.164 seconds
+[2024-10-08T21:54:23.626+0500] {processor.py:186} INFO - Started process (PID=67005) to work on /home/nicolaspc/airflow/dags/project_1.py
+[2024-10-08T21:54:23.633+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_1.py for tasks to queue
+[2024-10-08T21:54:23.634+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:54:23.634+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_1.py
+[2024-10-08T21:54:24.690+0500] {processor.py:925} INFO - DAG(s) 'lr_train', 'hgb_train', 'rf_train' retrieved from /home/nicolaspc/airflow/dags/project_1.py
+[2024-10-08T21:54:24.716+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:54:24.716+0500] {dag.py:3211} INFO - Sync 3 DAGs
+[2024-10-08T21:54:24.717+0500] {logging_mixin.py:190} WARNING - Sync 3 DAGs
+[2024-10-08T21:54:24.734+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:54:24.734+0500] {dag.py:4138} INFO - Setting next_dagrun for hgb_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:54:24.734+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for hgb_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:54:24.737+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:54:24.737+0500] {dag.py:4138} INFO - Setting next_dagrun for lr_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:54:24.738+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for lr_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:54:24.739+0500] {logging_mixin.py:190} INFO - [2024-10-08T21:54:24.739+0500] {dag.py:4138} INFO - Setting next_dagrun for rf_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:54:24.740+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for rf_train to 2024-10-08 01:00:00+00:00, run_after=2024-10-09 01:00:00+00:00
+[2024-10-08T21:54:24.754+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_1.py took 1.132 seconds

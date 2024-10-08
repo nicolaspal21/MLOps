@@ -1,0 +1,25 @@
+[2024-10-08T21:39:26.824+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T21:39:26.850+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lr_train.prepare_data manual__2024-10-08T16:39:11.630313+00:00 [queued]>
+[2024-10-08T21:39:26.859+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lr_train.prepare_data manual__2024-10-08T16:39:11.630313+00:00 [queued]>
+[2024-10-08T21:39:26.859+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T21:39:26.873+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-08 16:39:11.630313+00:00
+[2024-10-08T21:39:26.887+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=52827) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T21:39:26.887+0500] {standard_task_runner.py:72} INFO - Started process 52910 to run task
+[2024-10-08T21:39:26.887+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'lr_train', 'prepare_data', 'manual__2024-10-08T16:39:11.630313+00:00', '--job-id', '892', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmpbl1_5_79']
+[2024-10-08T21:39:26.889+0500] {standard_task_runner.py:105} INFO - Job 892: Subtask prepare_data
+[2024-10-08T21:39:26.945+0500] {task_command.py:467} INFO - Running <TaskInstance: lr_train.prepare_data manual__2024-10-08T16:39:11.630313+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T21:39:27.034+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='lr_train' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T16:39:11.630313+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-08T16:39:11.630313+00:00'
+[2024-10-08T21:39:27.035+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T21:39:27.237+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/california_housing.pkl
+[2024-10-08T21:39:27.250+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T21:39:27.250+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T21:39:36.153+0500] {train_models.py:130} INFO - Данные для обработки из S3 загружены
+[2024-10-08T21:39:36.169+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T21:39:36.169+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T21:39:41.231+0500] {train_models.py:167} INFO - Данные подготовлены и сохранены на S3
+[2024-10-08T21:39:41.233+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'lr', 'start_timestamp': '20241008 21:39', 'experiment_id': '141', 'get_data_start': '20241008 21:39', 'get_data_end': '20241008 21:39', 'data_shape': [20640, 9], 'prepare_data_start': '20241008 21:39', 'prepare_data_end': '20241008 21:39', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']}
+[2024-10-08T21:39:41.260+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T21:39:41.261+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=lr_train, task_id=prepare_data, run_id=manual__2024-10-08T16:39:11.630313+00:00, execution_date=20241008T163911, start_date=20241008T163926, end_date=20241008T163941
+[2024-10-08T21:39:41.312+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-08T21:39:41.336+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T21:39:41.339+0500] {local_task_job_runner.py:240} INFO - ::endgroup::
