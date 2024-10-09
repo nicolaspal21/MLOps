@@ -28,6 +28,8 @@ from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
+from airflow.models import Variable
+
 # копируем из прошлого дага
 DEFAULT_ARGS = {
     "owner" : "Nicolas Pal",
@@ -39,7 +41,8 @@ DEFAULT_ARGS = {
 _LOG = logging.getLogger()
 _LOG.addHandler(logging.StreamHandler())
 
-BUCKET = "test-bucket-nicolas-1"
+BUCKET = Variable.get('S3_BUCKET')
+REGION = Variable.get('AWS_DEFAULT_REGION')
 
 FEATURES = ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population", "AveOccup", "Latitude", "Longitude"]
 TARGET = "MedHouseVal"
@@ -98,7 +101,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
 
         # сохраняем результаты обучения на s3
         s3_hook = S3Hook("s3_connection")
-        session = s3_hook.get_session("eu-north-1")
+        session = s3_hook.get_session(REGION)
         resource = session.resource("s3")
 
         # Сохраняем файл в формате pkl на S3
@@ -138,7 +141,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
 
         # Сохранить готовые данные на S3
         s3_hook = S3Hook("s3_connection")
-        session = s3_hook.get_session("eu-north-1")
+        session = s3_hook.get_session(REGION)
         resource = session.resource("s3")
         
         for name, data in zip(["X_train", "X_test", "X_val", "y_train", "y_test", "y_val"],
@@ -231,7 +234,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         # сохраняем результаты обучения на s3
         date = datetime.now().strftime("%Y_%m_%d_%H")
 
-        session = s3_hook.get_session("eu-north-1")
+        session = s3_hook.get_session(REGION)
         resource = session.resource("s3")
     
         # сохраним в формате json на s3 в бакет в папку results
