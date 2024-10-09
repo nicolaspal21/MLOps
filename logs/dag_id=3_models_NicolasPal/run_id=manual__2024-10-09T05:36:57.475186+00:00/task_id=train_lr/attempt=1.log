@@ -1,0 +1,37 @@
+[2024-10-09T10:37:17.316+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-09T10:37:17.340+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_NicolasPal.train_lr manual__2024-10-09T05:36:57.475186+00:00 [queued]>
+[2024-10-09T10:37:17.349+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_NicolasPal.train_lr manual__2024-10-09T05:36:57.475186+00:00 [queued]>
+[2024-10-09T10:37:17.349+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-09T10:37:17.551+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_lr> on 2024-10-09 05:36:57.475186+00:00
+[2024-10-09T10:37:17.565+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=20042) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-09T10:37:17.566+0500] {standard_task_runner.py:72} INFO - Started process 20119 to run task
+[2024-10-09T10:37:17.565+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_NicolasPal', 'train_lr', 'manual__2024-10-09T05:36:57.475186+00:00', '--job-id', '1007', '--raw', '--subdir', 'DAGS_FOLDER/project_2.py', '--cfg-path', '/tmp/tmp08i0pb3k']
+[2024-10-09T10:37:17.567+0500] {standard_task_runner.py:105} INFO - Job 1007: Subtask train_lr
+[2024-10-09T10:37:17.631+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_NicolasPal.train_lr manual__2024-10-09T05:36:57.475186+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-09T10:37:17.736+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_NicolasPal' AIRFLOW_CTX_TASK_ID='train_lr' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T05:36:57.475186+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T05:36:57.475186+00:00'
+[2024-10-09T10:37:17.737+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-09T10:37:17.768+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/X_train.pkl
+[2024-10-09T10:37:17.784+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-09T10:37:17.784+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-09T10:37:19.472+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/X_test.pkl
+[2024-10-09T10:37:20.147+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/X_val.pkl
+[2024-10-09T10:37:20.621+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/y_train.pkl
+[2024-10-09T10:37:21.166+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/y_test.pkl
+[2024-10-09T10:37:21.618+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/y_val.pkl
+[2024-10-09T10:37:22.050+0500] {project_2.py:187} INFO - Данные для обучения модели из S3 загружены
+[2024-10-09T10:37:22.151+0500] {migration.py:216} INFO - Context impl PostgresqlImpl.
+[2024-10-09T10:37:22.152+0500] {migration.py:219} INFO - Will assume transactional DDL.
+[2024-10-09T10:37:24.914+0500] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-09T10:37:28.917+0500] {logging_mixin.py:190} WARNING - Registered model 'sk-learn-lr-reg-model' already exists. Creating a new version of this model...
+[2024-10-09T10:37:28.940+0500] {logging_mixin.py:190} WARNING - Created version '10' of model 'sk-learn-lr-reg-model'.
+[2024-10-09T10:37:30.957+0500] {logging_mixin.py:190} WARNING - 2024/10/09 10:37:30 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-10-09T10:37:30.976+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-10-09T10:37:30.978+0500] {logging_mixin.py:190} WARNING - 2024/10/09 10:37:30 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-10-09T10:37:30.981+0500] {logging_mixin.py:190} WARNING - 2024/10/09 10:37:30 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-10-09T10:37:31.011+0500] {project_2.py:229} INFO - Модели обучены, метрики сохранены
+[2024-10-09T10:37:31.014+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20241009 10:36', 'experiment_id': '170', 'parent_run_id': '67624ba0b791436298f772ab8fee88bf', 'get_data_start': '20241009 10:37', 'get_data_end': '20241009 10:37', 'data_shape': [20640, 9], 'prepare_data_start': '20241009 10:37', 'prepare_data_end': '20241009 10:37', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude'], 'train_model_end': '20241009 10:37'}
+[2024-10-09T10:37:31.057+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-09T10:37:31.057+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_NicolasPal, task_id=train_lr, run_id=manual__2024-10-09T05:36:57.475186+00:00, execution_date=20241009T053657, start_date=20241009T053717, end_date=20241009T053731
+[2024-10-09T10:37:31.116+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-09T10:37:31.139+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T10:37:31.141+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

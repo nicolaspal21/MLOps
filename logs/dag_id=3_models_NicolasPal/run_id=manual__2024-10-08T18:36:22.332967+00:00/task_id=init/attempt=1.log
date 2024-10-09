@@ -1,0 +1,20 @@
+[2024-10-08T23:36:24.601+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T23:36:24.620+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_NicolasPal.init manual__2024-10-08T18:36:22.332967+00:00 [queued]>
+[2024-10-08T23:36:24.627+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_NicolasPal.init manual__2024-10-08T18:36:22.332967+00:00 [queued]>
+[2024-10-08T23:36:24.627+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T23:36:24.639+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): init> on 2024-10-08 18:36:22.332967+00:00
+[2024-10-08T23:36:24.652+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=55024) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T23:36:24.654+0500] {standard_task_runner.py:72} INFO - Started process 55093 to run task
+[2024-10-08T23:36:24.652+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_NicolasPal', 'init', 'manual__2024-10-08T18:36:22.332967+00:00', '--job-id', '930', '--raw', '--subdir', 'DAGS_FOLDER/project_2.py', '--cfg-path', '/tmp/tmp8sk8f4qr']
+[2024-10-08T23:36:24.655+0500] {standard_task_runner.py:105} INFO - Job 930: Subtask init
+[2024-10-08T23:36:24.715+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_NicolasPal.init manual__2024-10-08T18:36:22.332967+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T23:36:24.795+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_NicolasPal' AIRFLOW_CTX_TASK_ID='init' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T18:36:22.332967+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-08T18:36:22.332967+00:00'
+[2024-10-08T23:36:24.796+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T23:36:25.056+0500] {migration.py:216} INFO - Context impl PostgresqlImpl.
+[2024-10-08T23:36:25.056+0500] {migration.py:219} INFO - Will assume transactional DDL.
+[2024-10-08T23:36:25.431+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20241008 23:36', 'experiment_id': '170', 'parent_run_id': '18ee90f8e255444891d211a75bde0562'}
+[2024-10-08T23:36:25.463+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T23:36:25.463+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_NicolasPal, task_id=init, run_id=manual__2024-10-08T18:36:22.332967+00:00, execution_date=20241008T183622, start_date=20241008T183624, end_date=20241008T183625
+[2024-10-08T23:36:25.513+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-08T23:36:25.542+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T23:36:25.547+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

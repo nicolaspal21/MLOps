@@ -1,0 +1,296 @@
+[2024-10-08T23:56:41.204+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T23:56:41.221+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_NicolasPal.train_lr manual__2024-10-08T18:56:21.777593+00:00 [queued]>
+[2024-10-08T23:56:41.229+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_NicolasPal.train_lr manual__2024-10-08T18:56:21.777593+00:00 [queued]>
+[2024-10-08T23:56:41.230+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T23:56:41.240+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_lr> on 2024-10-08 18:56:21.777593+00:00
+[2024-10-08T23:56:41.255+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=72355) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T23:56:41.256+0500] {standard_task_runner.py:72} INFO - Started process 72442 to run task
+[2024-10-08T23:56:41.256+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_NicolasPal', 'train_lr', 'manual__2024-10-08T18:56:21.777593+00:00', '--job-id', '964', '--raw', '--subdir', 'DAGS_FOLDER/project_2.py', '--cfg-path', '/tmp/tmpr0fisp5f']
+[2024-10-08T23:56:41.263+0500] {standard_task_runner.py:105} INFO - Job 964: Subtask train_lr
+[2024-10-08T23:56:41.322+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_NicolasPal.train_lr manual__2024-10-08T18:56:21.777593+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T23:56:41.416+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_NicolasPal' AIRFLOW_CTX_TASK_ID='train_lr' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T18:56:21.777593+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-08T18:56:21.777593+00:00'
+[2024-10-08T23:56:41.417+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T23:56:41.640+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/X_train.pkl
+[2024-10-08T23:56:41.656+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T23:56:41.656+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T23:56:45.172+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/X_test.pkl
+[2024-10-08T23:56:45.738+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/X_val.pkl
+[2024-10-08T23:56:46.328+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/y_train.pkl
+[2024-10-08T23:56:47.026+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/y_test.pkl
+[2024-10-08T23:56:47.469+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/lr/datasets/y_val.pkl
+[2024-10-08T23:56:47.907+0500] {project_2.py:182} INFO - Данные для обучения модели из S3 загружены
+[2024-10-08T23:56:48.004+0500] {migration.py:216} INFO - Context impl PostgresqlImpl.
+[2024-10-08T23:56:48.005+0500] {migration.py:219} INFO - Will assume transactional DDL.
+[2024-10-08T23:56:48.215+0500] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/db/utils.py", line 147, in make_managed_session
+    yield session
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 390, in get_experiment
+    return self._get_experiment(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 364, in _get_experiment
+    .one_or_none()
+     ^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2850, in one_or_none
+    return self._iter().one_or_none()
+           ^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.experiment_id = %(experiment_id_1)s AND experiments.lifecycle_stage IN (%(lifecycle_stage_1_1)s, %(lifecycle_stage_1_2)s)]
+[parameters: {'experiment_id_1': '0c089364db6f492d90582b097cc3bce9', 'lifecycle_stage_1_1': 'active', 'lifecycle_stage_1_2': 'deleted'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/project_2.py", line 195, in train_model
+    with mlflow.start_run(run_name=m_name, experiment_id=metrics["parent_run_id"], nested=True) as child_run:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 382, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/client.py", line 395, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 165, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 466, in create_run
+    experiment = self.get_experiment(experiment_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 389, in get_experiment
+    with self.ManagedSessionMaker() as session:
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/db/utils.py", line 161, in make_managed_session
+    raise MlflowException(message=e, error_code=BAD_REQUEST)
+mlflow.exceptions.MlflowException: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.experiment_id = %(experiment_id_1)s AND experiments.lifecycle_stage IN (%(lifecycle_stage_1_1)s, %(lifecycle_stage_1_2)s)]
+[parameters: {'experiment_id_1': '0c089364db6f492d90582b097cc3bce9', 'lifecycle_stage_1_1': 'active', 'lifecycle_stage_1_2': 'deleted'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2024-10-08T23:56:48.233+0500] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=3_models_NicolasPal, task_id=train_lr, run_id=manual__2024-10-08T18:56:21.777593+00:00, execution_date=20241008T185621, start_date=20241008T185641, end_date=20241008T185648
+[2024-10-08T23:56:48.251+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T23:56:48.251+0500] {standard_task_runner.py:124} ERROR - Failed to execute job 964 for task train_lr ((psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.experiment_id = %(experiment_id_1)s AND experiments.lifecycle_stage IN (%(lifecycle_stage_1_1)s, %(lifecycle_stage_1_2)s)]
+[parameters: {'experiment_id_1': '0c089364db6f492d90582b097cc3bce9', 'lifecycle_stage_1_1': 'active', 'lifecycle_stage_1_2': 'deleted'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h); 72442)
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/db/utils.py", line 147, in make_managed_session
+    yield session
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 390, in get_experiment
+    return self._get_experiment(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 364, in _get_experiment
+    .one_or_none()
+     ^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2850, in one_or_none
+    return self._iter().one_or_none()
+           ^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.experiment_id = %(experiment_id_1)s AND experiments.lifecycle_stage IN (%(lifecycle_stage_1_1)s, %(lifecycle_stage_1_2)s)]
+[parameters: {'experiment_id_1': '0c089364db6f492d90582b097cc3bce9', 'lifecycle_stage_1_1': 'active', 'lifecycle_stage_1_2': 'deleted'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/airflow/dags/project_2.py", line 195, in train_model
+    with mlflow.start_run(run_name=m_name, experiment_id=metrics["parent_run_id"], nested=True) as child_run:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 382, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/client.py", line 395, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 165, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 466, in create_run
+    experiment = self.get_experiment(experiment_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/tracking/sqlalchemy_store.py", line 389, in get_experiment
+    with self.ManagedSessionMaker() as session:
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/mlflow/store/db/utils.py", line 161, in make_managed_session
+    raise MlflowException(message=e, error_code=BAD_REQUEST)
+mlflow.exceptions.MlflowException: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "0c089364db6f492d90582b097cc3bce9"
+LINE 3: WHERE experiments.experiment_id = '0c089364db6f492d90582b097...
+                                          ^
+
+[SQL: SELECT experiments.experiment_id AS experiments_experiment_id, experiments.name AS experiments_name, experiments.artifact_location AS experiments_artifact_location, experiments.lifecycle_stage AS experiments_lifecycle_stage, experiments.creation_time AS experiments_creation_time, experiments.last_update_time AS experiments_last_update_time 
+FROM experiments 
+WHERE experiments.experiment_id = %(experiment_id_1)s AND experiments.lifecycle_stage IN (%(lifecycle_stage_1_1)s, %(lifecycle_stage_1_2)s)]
+[parameters: {'experiment_id_1': '0c089364db6f492d90582b097cc3bce9', 'lifecycle_stage_1_1': 'active', 'lifecycle_stage_1_2': 'deleted'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2024-10-08T23:56:48.305+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-10-08T23:56:48.321+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T23:56:48.327+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

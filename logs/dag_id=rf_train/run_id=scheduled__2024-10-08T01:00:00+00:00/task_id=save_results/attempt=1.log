@@ -1,0 +1,21 @@
+[2024-10-09T10:29:57.894+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-09T10:29:57.913+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.save_results scheduled__2024-10-08T01:00:00+00:00 [queued]>
+[2024-10-09T10:29:57.924+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.save_results scheduled__2024-10-08T01:00:00+00:00 [queued]>
+[2024-10-09T10:29:57.924+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-09T10:29:57.940+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): save_results> on 2024-10-08 01:00:00+00:00
+[2024-10-09T10:29:57.955+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=13742) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-09T10:29:57.956+0500] {standard_task_runner.py:72} INFO - Started process 13777 to run task
+[2024-10-09T10:29:57.955+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'save_results', 'scheduled__2024-10-08T01:00:00+00:00', '--job-id', '1002', '--raw', '--subdir', 'DAGS_FOLDER/project_1.py', '--cfg-path', '/tmp/tmpxkw9cwdd']
+[2024-10-09T10:29:57.960+0500] {standard_task_runner.py:105} INFO - Job 1002: Subtask save_results
+[2024-10-09T10:29:58.016+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.save_results scheduled__2024-10-08T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-09T10:29:58.092+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='save_results' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-08T01:00:00+00:00'
+[2024-10-09T10:29:58.093+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-09T10:29:58.278+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-09T10:29:58.279+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-09T10:29:59.130+0500] {project_1.py:241} INFO - Результаты сохранены в папку result
+[2024-10-09T10:29:59.131+0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-09T10:29:59.154+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-09T10:29:59.154+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=rf_train, task_id=save_results, run_id=scheduled__2024-10-08T01:00:00+00:00, execution_date=20241008T010000, start_date=20241009T052957, end_date=20241009T052959
+[2024-10-09T10:29:59.255+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-09T10:29:59.276+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T10:29:59.283+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

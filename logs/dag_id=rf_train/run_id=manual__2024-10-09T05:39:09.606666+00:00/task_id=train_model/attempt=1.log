@@ -1,0 +1,41 @@
+[2024-10-09T10:39:25.559+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-09T10:39:25.578+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.train_model manual__2024-10-09T05:39:09.606666+00:00 [queued]>
+[2024-10-09T10:39:25.585+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.train_model manual__2024-10-09T05:39:09.606666+00:00 [queued]>
+[2024-10-09T10:39:25.585+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-09T10:39:25.596+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_model> on 2024-10-09 05:39:09.606666+00:00
+[2024-10-09T10:39:25.609+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=22540) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-09T10:39:25.610+0500] {standard_task_runner.py:72} INFO - Started process 22586 to run task
+[2024-10-09T10:39:25.610+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'train_model', 'manual__2024-10-09T05:39:09.606666+00:00', '--job-id', '1018', '--raw', '--subdir', 'DAGS_FOLDER/project_1.py', '--cfg-path', '/tmp/tmpcose581q']
+[2024-10-09T10:39:25.612+0500] {standard_task_runner.py:105} INFO - Job 1018: Subtask train_model
+[2024-10-09T10:39:25.665+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.train_model manual__2024-10-09T05:39:09.606666+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-09T10:39:25.745+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T05:39:09.606666+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T05:39:09.606666+00:00'
+[2024-10-09T10:39:25.746+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-09T10:39:25.925+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/rf/datasets/X_train.pkl
+[2024-10-09T10:39:25.938+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-09T10:39:25.938+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-09T10:39:27.552+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/rf/datasets/X_test.pkl
+[2024-10-09T10:39:28.002+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/rf/datasets/X_val.pkl
+[2024-10-09T10:39:28.495+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/rf/datasets/y_train.pkl
+[2024-10-09T10:39:28.973+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/rf/datasets/y_test.pkl
+[2024-10-09T10:39:29.378+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project1/rf/datasets/y_val.pkl
+[2024-10-09T10:39:29.802+0500] {project_1.py:179} INFO - Данные для обучения модели из S3 загружены
+[2024-10-09T10:39:29.908+0500] {migration.py:216} INFO - Context impl PostgresqlImpl.
+[2024-10-09T10:39:29.909+0500] {migration.py:219} INFO - Will assume transactional DDL.
+[2024-10-09T10:39:42.940+0500] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-09T10:40:40.053+0500] {logging_mixin.py:190} WARNING - Registered model 'sk-learn-rf-reg-model' already exists. Creating a new version of this model...
+[2024-10-09T10:40:40.086+0500] {logging_mixin.py:190} WARNING - Created version '11' of model 'sk-learn-rf-reg-model'.
+[2024-10-09T10:41:05.235+0500] {connectionpool.py:330} WARNING - Connection pool is full, discarding connection: s3.eu-north-1.amazonaws.com. Connection pool size: 10
+[2024-10-09T10:41:08.438+0500] {connectionpool.py:330} WARNING - Connection pool is full, discarding connection: s3.eu-north-1.amazonaws.com. Connection pool size: 10
+[2024-10-09T10:41:08.659+0500] {connectionpool.py:330} WARNING - Connection pool is full, discarding connection: s3.eu-north-1.amazonaws.com. Connection pool size: 10
+[2024-10-09T10:41:08.909+0500] {connectionpool.py:330} WARNING - Connection pool is full, discarding connection: s3.eu-north-1.amazonaws.com. Connection pool size: 10
+[2024-10-09T10:41:09.369+0500] {logging_mixin.py:190} WARNING - 2024/10/09 10:41:09 INFO mlflow.models.evaluation.default_evaluator: Computing model predictions.
+[2024-10-09T10:41:09.501+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/sklearn/metrics/_regression.py:492 FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+[2024-10-09T10:41:09.503+0500] {logging_mixin.py:190} WARNING - 2024/10/09 10:41:09 INFO mlflow.models.evaluation.default_evaluator: Testing metrics on first row...
+[2024-10-09T10:41:09.505+0500] {logging_mixin.py:190} WARNING - 2024/10/09 10:41:09 WARNING mlflow.models.evaluation.default_evaluator: SHAP or matplotlib package is not installed, so model explainability insights will not be logged.
+[2024-10-09T10:41:09.528+0500] {project_1.py:221} INFO - Модели обучены, метрики сохранены
+[2024-10-09T10:41:09.530+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'rf', 'start_timestamp': '20241009 10:39', 'experiment_id': '142', 'get_data_start': '20241009 10:39', 'get_data_end': '20241009 10:39', 'data_shape': [20640, 9], 'prepare_data_start': '20241009 10:39', 'prepare_data_end': '20241009 10:39', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude'], 'train_model_start': '20241009 10:39', 'train_model_end': '20241009 10:41'}
+[2024-10-09T10:41:09.558+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-09T10:41:09.558+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=rf_train, task_id=train_model, run_id=manual__2024-10-09T05:39:09.606666+00:00, execution_date=20241009T053909, start_date=20241009T053925, end_date=20241009T054109
+[2024-10-09T10:41:09.669+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-09T10:41:09.688+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T10:41:09.691+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

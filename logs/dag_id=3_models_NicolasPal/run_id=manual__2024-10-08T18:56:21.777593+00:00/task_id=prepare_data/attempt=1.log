@@ -1,0 +1,25 @@
+[2024-10-08T23:56:32.172+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T23:56:32.197+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_NicolasPal.prepare_data manual__2024-10-08T18:56:21.777593+00:00 [queued]>
+[2024-10-08T23:56:32.205+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_NicolasPal.prepare_data manual__2024-10-08T18:56:21.777593+00:00 [queued]>
+[2024-10-08T23:56:32.206+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T23:56:32.230+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-08 18:56:21.777593+00:00
+[2024-10-08T23:56:32.266+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_NicolasPal', 'prepare_data', 'manual__2024-10-08T18:56:21.777593+00:00', '--job-id', '963', '--raw', '--subdir', 'DAGS_FOLDER/project_2.py', '--cfg-path', '/tmp/tmp180o1i40']
+[2024-10-08T23:56:32.273+0500] {standard_task_runner.py:105} INFO - Job 963: Subtask prepare_data
+[2024-10-08T23:56:32.273+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=72176) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T23:56:32.277+0500] {standard_task_runner.py:72} INFO - Started process 72230 to run task
+[2024-10-08T23:56:32.353+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_NicolasPal.prepare_data manual__2024-10-08T18:56:21.777593+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T23:56:32.473+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_NicolasPal' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T18:56:21.777593+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-08T18:56:21.777593+00:00'
+[2024-10-08T23:56:32.474+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T23:56:32.688+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/project2/datasets/california_housing.pkl
+[2024-10-08T23:56:32.702+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T23:56:32.702+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T23:56:35.921+0500] {project_2.py:137} INFO - Данные для обработки из S3 загружены
+[2024-10-08T23:56:35.942+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T23:56:35.942+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T23:56:39.109+0500] {project_2.py:157} INFO - Данные подготовлены и сохранены на S3
+[2024-10-08T23:56:39.111+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20241008 23:56', 'experiment_id': '170', 'parent_run_id': '0c089364db6f492d90582b097cc3bce9', 'get_data_start': '20241008 23:56', 'get_data_end': '20241008 23:56', 'data_shape': [20640, 9], 'prepare_data_start': '20241008 23:56', 'prepare_data_end': '20241008 23:56', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']}
+[2024-10-08T23:56:39.136+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T23:56:39.137+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_NicolasPal, task_id=prepare_data, run_id=manual__2024-10-08T18:56:21.777593+00:00, execution_date=20241008T185621, start_date=20241008T185632, end_date=20241008T185639
+[2024-10-08T23:56:39.181+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-08T23:56:39.207+0500] {taskinstance.py:3891} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T23:56:39.210+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

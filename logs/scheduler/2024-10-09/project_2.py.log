@@ -1,0 +1,315 @@
+[2024-10-09T10:26:00.819+0500] {processor.py:186} INFO - Started process (PID=8204) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:26:00.819+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:26:00.822+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:26:00.821+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:26:02.313+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:26:02.407+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:26:02.406+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:26:02.407+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:26:02.434+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:26:02.434+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:26:02.434+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:26:02.619+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.806 seconds
+[2024-10-09T10:26:32.921+0500] {processor.py:186} INFO - Started process (PID=10076) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:26:32.924+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:26:32.930+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:26:32.927+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:26:35.545+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:26:35.709+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:26:35.709+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:26:35.839+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:26:35.869+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:26:35.868+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:26:35.869+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:26:36.169+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 3.259 seconds
+[2024-10-09T10:27:06.249+0500] {processor.py:186} INFO - Started process (PID=11245) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:27:06.258+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:27:06.259+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:27:06.259+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:27:07.340+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:27:07.362+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:27:07.362+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:27:07.362+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:27:07.378+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:27:07.378+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:27:07.378+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:27:07.393+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.148 seconds
+[2024-10-09T10:27:37.586+0500] {processor.py:186} INFO - Started process (PID=11671) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:27:37.595+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:27:37.597+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:27:37.597+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:27:38.690+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:27:38.721+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:27:38.720+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:27:38.721+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:27:38.744+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:27:38.744+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:27:38.744+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:27:38.764+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.182 seconds
+[2024-10-09T10:28:08.969+0500] {processor.py:186} INFO - Started process (PID=12123) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:28:08.977+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:28:08.979+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:28:08.979+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:28:10.026+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:28:10.047+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:28:10.047+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:28:10.047+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:28:10.065+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:28:10.065+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:28:10.065+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:28:10.081+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.116 seconds
+[2024-10-09T10:28:40.273+0500] {processor.py:186} INFO - Started process (PID=12585) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:28:40.282+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:28:40.284+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:28:40.284+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:28:41.344+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:28:41.373+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:28:41.373+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:28:41.373+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:28:41.407+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:28:41.406+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:28:41.407+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:28:41.425+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.155 seconds
+[2024-10-09T10:29:11.571+0500] {processor.py:186} INFO - Started process (PID=13095) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:29:11.576+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:29:11.578+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:29:11.578+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:29:12.663+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:29:12.682+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:29:12.682+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:29:12.682+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:29:12.698+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:29:12.698+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:29:12.698+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:29:12.720+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.152 seconds
+[2024-10-09T10:29:42.924+0500] {processor.py:186} INFO - Started process (PID=13531) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:29:42.933+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:29:42.935+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:29:42.935+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:29:44.006+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:29:44.026+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:29:44.026+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:29:44.026+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:29:44.044+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:29:44.044+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:29:44.044+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:29:44.058+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.138 seconds
+[2024-10-09T10:30:14.239+0500] {processor.py:186} INFO - Started process (PID=14021) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:30:14.239+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:30:14.241+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:30:14.241+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:30:15.278+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:30:15.304+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:30:15.303+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:30:15.304+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:30:15.320+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:30:15.320+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:30:15.320+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:30:15.335+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.100 seconds
+[2024-10-09T10:30:45.540+0500] {processor.py:186} INFO - Started process (PID=14434) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:30:45.549+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:30:45.550+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:30:45.550+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:30:46.811+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:30:46.832+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:30:46.831+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:30:46.832+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:30:46.848+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:30:46.848+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:30:46.848+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:30:46.863+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.327 seconds
+[2024-10-09T10:31:17.094+0500] {processor.py:186} INFO - Started process (PID=15034) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:31:17.102+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:31:17.104+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:31:17.104+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:31:18.254+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:31:18.275+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:31:18.275+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:31:18.275+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:31:18.292+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:31:18.292+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:31:18.292+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:31:18.307+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.217 seconds
+[2024-10-09T10:31:48.513+0500] {processor.py:186} INFO - Started process (PID=15515) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:31:48.521+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:31:48.523+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:31:48.523+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:31:49.554+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:31:49.576+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:31:49.575+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:31:49.576+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:31:49.590+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:31:49.590+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:31:49.590+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:31:49.604+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.095 seconds
+[2024-10-09T10:32:19.789+0500] {processor.py:186} INFO - Started process (PID=15894) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:32:19.798+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:32:19.800+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:32:19.799+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:32:20.863+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:32:20.883+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:32:20.883+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:32:20.883+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:32:20.898+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:32:20.898+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:32:20.899+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:32:20.913+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.128 seconds
+[2024-10-09T10:32:51.116+0500] {processor.py:186} INFO - Started process (PID=16302) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:32:51.117+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:32:51.118+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:32:51.118+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:32:52.169+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:32:52.189+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:32:52.189+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:32:52.189+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:32:52.206+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:32:52.206+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:32:52.206+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:32:52.224+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.112 seconds
+[2024-10-09T10:33:02.315+0500] {processor.py:186} INFO - Started process (PID=16471) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:33:02.323+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:33:02.325+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:33:02.325+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:33:03.297+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:33:03.308+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:33:03.307+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:33:03.308+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:33:03.324+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:33:03.324+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:33:03.324+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:33:03.342+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.032 seconds
+[2024-10-09T10:33:33.549+0500] {processor.py:186} INFO - Started process (PID=16876) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:33:33.559+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:33:33.562+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:33:33.562+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:33:34.886+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:33:34.897+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:33:34.897+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:33:34.897+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:33:34.913+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:33:34.913+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:33:34.913+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:33:34.928+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.392 seconds
+[2024-10-09T10:34:05.723+0500] {processor.py:186} INFO - Started process (PID=17296) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:05.724+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:34:05.725+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:05.725+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:06.743+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:06.753+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:06.753+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:34:06.753+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:34:06.767+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:06.767+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:34:06.767+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:34:06.781+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.063 seconds
+[2024-10-09T10:34:25.829+0500] {processor.py:186} INFO - Started process (PID=17559) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:25.838+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:34:25.840+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:25.840+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:27.024+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:27.035+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:27.034+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:34:27.035+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:34:27.050+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:27.050+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:34:27.050+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:34:27.168+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.344 seconds
+[2024-10-09T10:34:57.361+0500] {processor.py:186} INFO - Started process (PID=18017) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:57.362+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:34:57.364+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:57.363+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:58.468+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:34:58.478+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:58.478+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:34:58.478+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:34:58.497+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:34:58.497+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:34:58.497+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:34:58.512+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.156 seconds
+[2024-10-09T10:35:20.663+0500] {processor.py:186} INFO - Started process (PID=18345) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:35:20.672+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:35:20.674+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:35:20.674+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:35:21.696+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:35:21.707+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:35:21.707+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:35:21.707+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:35:21.820+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:35:21.820+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:35:21.820+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:35:21.844+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.185 seconds
+[2024-10-09T10:35:52.075+0500] {processor.py:186} INFO - Started process (PID=18755) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:35:52.076+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:35:52.078+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:35:52.077+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:35:53.085+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:35:53.095+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:35:53.095+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:35:53.095+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:35:53.112+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:35:53.111+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:35:53.112+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:35:53.126+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.055 seconds
+[2024-10-09T10:36:23.314+0500] {processor.py:186} INFO - Started process (PID=19164) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:23.323+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:36:23.324+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:23.324+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:24.338+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:24.347+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:24.347+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:36:24.347+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:36:24.364+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:24.364+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:36:24.365+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:36:24.494+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.185 seconds
+[2024-10-09T10:36:45.651+0500] {processor.py:186} INFO - Started process (PID=19493) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:45.660+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:36:45.662+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:45.661+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:46.754+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:46.764+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:46.764+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:36:46.764+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:36:46.882+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:46.882+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:36:46.882+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:36:46.905+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.261 seconds
+[2024-10-09T10:36:53.698+0500] {processor.py:186} INFO - Started process (PID=19614) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:53.699+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:36:53.700+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:53.700+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:55.018+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:36:55.037+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:55.037+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:36:55.037+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:36:55.180+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:36:55.180+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:36:55.180+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:36:55.202+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.509 seconds
+[2024-10-09T10:37:25.328+0500] {processor.py:186} INFO - Started process (PID=20356) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:37:25.336+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:37:25.338+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:37:25.337+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:37:26.540+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:37:26.551+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:37:26.551+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:37:26.551+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:37:26.568+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:37:26.568+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:37:26.568+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:37:26.585+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.262 seconds
+[2024-10-09T10:37:56.774+0500] {processor.py:186} INFO - Started process (PID=20952) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:37:56.775+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:37:56.777+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:37:56.777+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:37:57.973+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:37:57.993+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:37:57.993+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:37:57.993+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:37:58.009+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:37:58.009+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:37:58.009+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:37:58.025+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.256 seconds
+[2024-10-09T10:38:28.206+0500] {processor.py:186} INFO - Started process (PID=21425) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:38:28.207+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:38:28.208+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:38:28.208+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:38:29.326+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:38:29.350+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:38:29.349+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:38:29.350+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:38:29.368+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:38:29.368+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:38:29.368+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:38:29.522+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.321 seconds
+[2024-10-09T10:39:00.102+0500] {processor.py:186} INFO - Started process (PID=21960) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:39:00.110+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:39:00.112+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:39:00.112+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:39:01.608+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:39:01.624+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:39:01.623+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:39:01.624+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:39:01.653+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:39:01.652+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:39:01.653+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:39:01.680+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.582 seconds
+[2024-10-09T10:39:31.832+0500] {processor.py:186} INFO - Started process (PID=22764) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:39:31.833+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:39:31.834+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:39:31.834+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:39:32.969+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:39:32.979+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:39:32.979+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:39:32.979+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:39:32.995+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:39:32.995+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:39:32.995+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:39:33.011+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.184 seconds
+[2024-10-09T10:40:03.173+0500] {processor.py:186} INFO - Started process (PID=23292) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:40:03.182+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:40:03.184+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:40:03.183+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:40:04.299+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:40:04.309+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:40:04.308+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:40:04.309+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:40:04.325+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:40:04.324+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:40:04.325+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:40:04.339+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.170 seconds
+[2024-10-09T10:40:34.538+0500] {processor.py:186} INFO - Started process (PID=23711) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:40:34.547+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:40:34.549+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:40:34.548+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:40:35.783+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:40:35.794+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:40:35.794+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:40:35.794+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:40:35.812+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:40:35.812+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:40:35.812+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:40:35.829+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.294 seconds
+[2024-10-09T10:41:06.011+0500] {processor.py:186} INFO - Started process (PID=24173) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:41:06.012+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:41:06.013+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:41:06.013+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:41:07.098+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:41:07.108+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:41:07.108+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:41:07.108+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:41:07.126+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:41:07.125+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:41:07.126+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:41:07.140+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.133 seconds
+[2024-10-09T10:41:37.311+0500] {processor.py:186} INFO - Started process (PID=24672) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:41:37.320+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:41:37.323+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:41:37.322+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:41:38.419+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:41:38.433+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:41:38.433+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:41:38.434+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:41:38.451+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:41:38.451+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:41:38.451+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:41:38.465+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.158 seconds
+[2024-10-09T10:42:08.644+0500] {processor.py:186} INFO - Started process (PID=25242) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:42:08.645+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:42:08.646+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:42:08.646+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:42:09.741+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:42:09.751+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:42:09.751+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:42:09.751+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:42:09.767+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:42:09.767+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:42:09.767+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:42:09.782+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.142 seconds
+[2024-10-09T10:42:39.972+0500] {processor.py:186} INFO - Started process (PID=25768) to work on /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:42:39.976+0500] {processor.py:914} INFO - Processing file /home/nicolaspc/airflow/dags/project_2.py for tasks to queue
+[2024-10-09T10:42:39.978+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:42:39.978+0500] {dagbag.py:587} INFO - Filling up the DagBag from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:42:41.070+0500] {processor.py:925} INFO - DAG(s) '3_models_NicolasPal' retrieved from /home/nicolaspc/airflow/dags/project_2.py
+[2024-10-09T10:42:41.080+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:42:41.079+0500] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-10-09T10:42:41.080+0500] {logging_mixin.py:190} WARNING - Sync 1 DAGs
+[2024-10-09T10:42:41.097+0500] {logging_mixin.py:190} INFO - [2024-10-09T10:42:41.097+0500] {dag.py:4138} INFO - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:42:41.098+0500] {logging_mixin.py:190} WARNING - Setting next_dagrun for 3_models_NicolasPal to 2024-10-09 01:00:00+00:00, run_after=2024-10-10 01:00:00+00:00
+[2024-10-09T10:42:41.113+0500] {processor.py:208} INFO - Processing /home/nicolaspc/airflow/dags/project_2.py took 1.145 seconds

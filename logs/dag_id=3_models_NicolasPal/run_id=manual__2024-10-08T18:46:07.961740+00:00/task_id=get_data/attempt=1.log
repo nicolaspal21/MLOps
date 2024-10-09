@@ -1,0 +1,22 @@
+[2024-10-08T23:46:12.071+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T23:46:12.089+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_models_NicolasPal.get_data manual__2024-10-08T18:46:07.961740+00:00 [queued]>
+[2024-10-08T23:46:12.097+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_models_NicolasPal.get_data manual__2024-10-08T18:46:07.961740+00:00 [queued]>
+[2024-10-08T23:46:12.098+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-08T23:46:12.109+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_data> on 2024-10-08 18:46:07.961740+00:00
+[2024-10-08T23:46:12.122+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=63168) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-08T23:46:12.122+0500] {standard_task_runner.py:72} INFO - Started process 63215 to run task
+[2024-10-08T23:46:12.122+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', '3_models_NicolasPal', 'get_data', 'manual__2024-10-08T18:46:07.961740+00:00', '--job-id', '948', '--raw', '--subdir', 'DAGS_FOLDER/project_2.py', '--cfg-path', '/tmp/tmpajsruawo']
+[2024-10-08T23:46:12.123+0500] {standard_task_runner.py:105} INFO - Job 948: Subtask get_data
+[2024-10-08T23:46:12.182+0500] {task_command.py:467} INFO - Running <TaskInstance: 3_models_NicolasPal.get_data manual__2024-10-08T18:46:07.961740+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-08T23:46:12.258+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='3_models_NicolasPal' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-08T18:46:07.961740+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-08T18:46:07.961740+00:00'
+[2024-10-08T23:46:12.259+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T23:46:12.451+0500] {base.py:84} INFO - Retrieving connection 'pg_connection'
+[2024-10-08T23:46:12.479+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-08T23:46:12.479+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-08T23:46:20.991+0500] {project_2.py:115} INFO - Данные загружены из б/д и сохранены на S3
+[2024-10-08T23:46:20.992+0500] {python.py:240} INFO - Done. Returned value was: {'start_tiemstamp': '20241008 23:46', 'experiment_id': '170', 'parent_run_id': '87d4bcf76a274503a104922c1dc1e6bf', 'get_data_start': '20241008 23:46', 'get_data_end': '20241008 23:46', 'data_shape': (20640, 9)}
+[2024-10-08T23:46:21.030+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-08T23:46:21.030+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=3_models_NicolasPal, task_id=get_data, run_id=manual__2024-10-08T18:46:07.961740+00:00, execution_date=20241008T184607, start_date=20241008T184612, end_date=20241008T184621
+[2024-10-08T23:46:21.108+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-08T23:46:21.138+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T23:46:21.141+0500] {local_task_job_runner.py:240} INFO - ::endgroup::
