@@ -85,19 +85,12 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         # время начало загрузки
         metrics["get_data_start"] = datetime.now().strftime("%Y%m%d %H:%M")
 
-        # Используем созданный ранее PG connection
-        pg_hook = PostgresHook("pg_connection")
-        con = pg_hook.get_conn()
-
         # качаем данные
         data_initial = fetch_california_housing()
         # Объединим фичи и таргет в один np.array
         dataset = np.concatenate([data_initial['data'], data_initial['target'].reshape([data_initial['target'].shape[0],1])],axis=1)
         # Преобразуем в dataframe.
         data= pd.DataFrame(dataset, columns = data_initial['feature_names']+data_initial['target_names'])
-
-        # Читаем все данные из таблицы california_housing
-        #data = pd.read_sql_query("SELECT * FROM california_housing", con)
 
         # сохраняем результаты обучения на s3
         s3_hook = S3Hook("s3_connection")
@@ -173,7 +166,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
         
         data = {}
         for name in ["X_train", "X_test", "X_val", "y_train", "y_test", "y_val"]:
-            file = s3_hook.download_file(key=f'NicolasPal/project1/{m_name}/datasets/{name}.pkl', bucket_name=BUCKET)
+            file = s3_hook.download_file(key=f"NicolasPal/project1/{m_name}/datasets/{name}.pkl", bucket_name=BUCKET)
             data[name] = pd.read_pickle(file)
     
         _LOG.info("Данные для обучения модели из S3 загружены")
@@ -239,7 +232,7 @@ def create_dag(dag_id, m_name: Literal["rf", "lr", "hgb"]):
     
         # сохраним в формате json на s3 в бакет в папку results
         json_byte_object = json.dumps(metrics)
-        resource.Object(BUCKET, f'NicolasPal/project1/{m_name}/result/{metrics['model']}_{date}.json').put(Body=json_byte_object)
+        resource.Object(BUCKET, f"NicolasPal/project1/{m_name}/result/{metrics['model']}_{date}.json").put(Body=json_byte_object)
 
         _LOG.info("Результаты сохранены в папку result")
 
