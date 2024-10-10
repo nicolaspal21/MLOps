@@ -1,0 +1,25 @@
+[2024-10-10T05:46:55.397+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-10T05:46:55.416+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hgb_train.prepare_data manual__2024-10-10T00:46:46.534092+00:00 [queued]>
+[2024-10-10T05:46:55.424+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hgb_train.prepare_data manual__2024-10-10T00:46:46.534092+00:00 [queued]>
+[2024-10-10T05:46:55.424+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-10T05:46:55.467+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-10 00:46:46.534092+00:00
+[2024-10-10T05:46:55.504+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'hgb_train', 'prepare_data', 'manual__2024-10-10T00:46:46.534092+00:00', '--job-id', '1029', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmpl3h12k3j']
+[2024-10-10T05:46:55.506+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10919) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-10T05:46:55.514+0500] {standard_task_runner.py:105} INFO - Job 1029: Subtask prepare_data
+[2024-10-10T05:46:55.514+0500] {standard_task_runner.py:72} INFO - Started process 10987 to run task
+[2024-10-10T05:46:55.603+0500] {task_command.py:467} INFO - Running <TaskInstance: hgb_train.prepare_data manual__2024-10-10T00:46:46.534092+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-10T05:46:55.684+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='hgb_train' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-10T00:46:46.534092+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-10T00:46:46.534092+00:00'
+[2024-10-10T05:46:55.685+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-10T05:46:55.707+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/hgb/datasets/california_housing.pkl
+[2024-10-10T05:46:55.722+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-10T05:46:55.722+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-10T05:46:59.074+0500] {train_models.py:106} INFO - Данные для обработки из S3 загружены
+[2024-10-10T05:46:59.105+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-10T05:46:59.105+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-10T05:47:01.782+0500] {train_models.py:134} INFO - Данные подготовлены и сохранены на S3
+[2024-10-10T05:47:01.783+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'hgb', 'start_timestamp': '20241010 05:46', 'get_data_start': '20241010 05:46', 'get_data_end': '20241010 05:46', 'data_shape': [20640, 9], 'prepare_data_start': '20241010 05:46', 'prepare_data_end': '20241010 05:47', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']}
+[2024-10-10T05:47:01.811+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-10T05:47:01.812+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=hgb_train, task_id=prepare_data, run_id=manual__2024-10-10T00:46:46.534092+00:00, execution_date=20241010T004646, start_date=20241010T004655, end_date=20241010T004701
+[2024-10-10T05:47:01.881+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-10T05:47:01.923+0500] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-10T05:47:01.929+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,25 @@
+[2024-10-10T06:00:11.165+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-10T06:00:11.197+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.prepare_data scheduled__2024-10-09T01:00:00+00:00 [queued]>
+[2024-10-10T06:00:11.208+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.prepare_data scheduled__2024-10-09T01:00:00+00:00 [queued]>
+[2024-10-10T06:00:11.208+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-10T06:00:11.229+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): prepare_data> on 2024-10-09 01:00:00+00:00
+[2024-10-10T06:00:11.246+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=19325) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-10T06:00:11.247+0500] {standard_task_runner.py:72} INFO - Started process 19436 to run task
+[2024-10-10T06:00:11.246+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'prepare_data', 'scheduled__2024-10-09T01:00:00+00:00', '--job-id', '1091', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmprp2k1wfo']
+[2024-10-10T06:00:11.248+0500] {standard_task_runner.py:105} INFO - Job 1091: Subtask prepare_data
+[2024-10-10T06:00:11.332+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.prepare_data scheduled__2024-10-09T01:00:00+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-10T06:00:11.460+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='prepare_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-09T01:00:00+00:00'
+[2024-10-10T06:00:11.461+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-10T06:00:11.505+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/rf/datasets/california_housing.pkl
+[2024-10-10T06:00:11.532+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-10T06:00:11.533+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-10T06:00:16.019+0500] {train_models.py:101} INFO - Данные для обработки из S3 загружены
+[2024-10-10T06:00:16.051+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-10T06:00:16.051+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-10T06:00:19.212+0500] {train_models.py:129} INFO - Данные подготовлены и сохранены на S3
+[2024-10-10T06:00:19.214+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'rf', 'start_timestamp': '20241010 06:00', 'get_data_start': '20241010 06:00', 'get_data_end': '20241010 06:00', 'data_shape': [20640, 9], 'prepare_data_start': '20241010 06:00', 'prepare_data_end': '20241010 06:00', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']}
+[2024-10-10T06:00:19.254+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-10T06:00:19.255+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=rf_train, task_id=prepare_data, run_id=scheduled__2024-10-09T01:00:00+00:00, execution_date=20241009T010000, start_date=20241010T010011, end_date=20241010T010019
+[2024-10-10T06:00:19.314+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-10T06:00:19.349+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-10T06:00:19.352+0500] {local_task_job_runner.py:240} INFO - ::endgroup::

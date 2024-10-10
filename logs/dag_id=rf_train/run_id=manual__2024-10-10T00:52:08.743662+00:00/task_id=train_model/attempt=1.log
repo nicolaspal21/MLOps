@@ -1,0 +1,26 @@
+[2024-10-10T05:52:22.898+0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-10T05:52:22.914+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rf_train.train_model manual__2024-10-10T00:52:08.743662+00:00 [queued]>
+[2024-10-10T05:52:22.922+0500] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rf_train.train_model manual__2024-10-10T00:52:08.743662+00:00 [queued]>
+[2024-10-10T05:52:22.922+0500] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-10-10T05:52:22.933+0500] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): train_model> on 2024-10-10 00:52:08.743662+00:00
+[2024-10-10T05:52:22.945+0500] {logging_mixin.py:190} WARNING - /home/nicolaspc/anaconda3/envs/mlops_env/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=14760) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-10T05:52:22.946+0500] {standard_task_runner.py:72} INFO - Started process 14816 to run task
+[2024-10-10T05:52:22.946+0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'rf_train', 'train_model', 'manual__2024-10-10T00:52:08.743662+00:00', '--job-id', '1064', '--raw', '--subdir', 'DAGS_FOLDER/train_models.py', '--cfg-path', '/tmp/tmp6f0fqdbh']
+[2024-10-10T05:52:22.948+0500] {standard_task_runner.py:105} INFO - Job 1064: Subtask train_model
+[2024-10-10T05:52:23.006+0500] {task_command.py:467} INFO - Running <TaskInstance: rf_train.train_model manual__2024-10-10T00:52:08.743662+00:00 [running]> on host nicolaspc-HP-Pavilion-Laptop-15-eh1xxx
+[2024-10-10T05:52:23.095+0500] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Nicolas Pal' AIRFLOW_CTX_DAG_ID='rf_train' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-10T00:52:08.743662+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-10T00:52:08.743662+00:00'
+[2024-10-10T05:52:23.096+0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-10T05:52:23.120+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/rf/datasets/X_train.pkl
+[2024-10-10T05:52:23.134+0500] {base.py:84} INFO - Retrieving connection 's3_connection'
+[2024-10-10T05:52:23.135+0500] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='s3_connection', conn_type='aws') credentials retrieved from login and password.
+[2024-10-10T05:52:24.664+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/rf/datasets/X_test.pkl
+[2024-10-10T05:52:25.106+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/rf/datasets/y_train.pkl
+[2024-10-10T05:52:25.580+0500] {s3.py:1387} INFO - Downloading source S3 file from Bucket test-bucket-nicolas-1 with path NicolasPal/rf/datasets/y_test.pkl
+[2024-10-10T05:52:26.030+0500] {train_models.py:155} INFO - Данные для обучения модели из S3 загружены
+[2024-10-10T05:52:37.962+0500] {train_models.py:176} INFO - Модели обучены, метрики сохранены
+[2024-10-10T05:52:37.964+0500] {python.py:240} INFO - Done. Returned value was: {'model': 'rf', 'start_timestamp': '20241010 05:52', 'get_data_start': '20241010 05:52', 'get_data_end': '20241010 05:52', 'data_shape': [20640, 9], 'prepare_data_start': '20241010 05:52', 'prepare_data_end': '20241010 05:52', 'features_name': ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude'], 'train_model_start': '20241010 05:52', 'train_model_end': '20241010 05:52', 'R^2_score': 0.81, 'rmse': 0.5, 'mae': 0.2}
+[2024-10-10T05:52:38.009+0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-10T05:52:38.009+0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=rf_train, task_id=train_model, run_id=manual__2024-10-10T00:52:08.743662+00:00, execution_date=20241010T005208, start_date=20241010T005222, end_date=20241010T005238
+[2024-10-10T05:52:38.062+0500] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-10-10T05:52:38.085+0500] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-10T05:52:38.087+0500] {local_task_job_runner.py:240} INFO - ::endgroup::
