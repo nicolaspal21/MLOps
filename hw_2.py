@@ -24,7 +24,11 @@ X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.5)
 # Создать новый эксперимент
 exp_name = "NicolasPal"
 
-experiment_id = mlflow.create_experiment(exp_name, artifact_location=f"s3://test-bucket-nicolas-1/mlflow/{exp_name}")
+try:
+    experiment_id = mlflow.create_experiment(exp_name, artifact_location=f"s3://test-bucket-nicolas-1/mlflow/{exp_name}")
+    
+except mlflow.exceptions.MlflowException:
+    experiment_id = mlflow.get_experiment_by_name(exp_name).experiment_id
 
 mlflow.set_experiment(exp_name)
 
