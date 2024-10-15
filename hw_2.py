@@ -14,6 +14,7 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.datasets import fetch_california_housing
 
+BUCKET = "test-bucket-nicolas-1"
 
 # Прочитаем данные.
 housing = fetch_california_housing(as_frame=True)
@@ -25,7 +26,7 @@ X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.5)
 exp_name = "NicolasPal"
 
 try:
-    experiment_id = mlflow.create_experiment(exp_name, artifact_location=f"s3://test-bucket-nicolas-1/mlflow/{exp_name}")
+    experiment_id = mlflow.create_experiment(exp_name, artifact_location=f"s3://{BUCKET}/mlflow/{exp_name}")
     
 except mlflow.exceptions.MlflowException:
     experiment_id = mlflow.get_experiment_by_name(exp_name).experiment_id
